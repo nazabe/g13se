@@ -131,11 +131,6 @@
       "remove": true
     },
     {
-      "path": "app/CalculatorGoogle",
-      "description": "",
-      "remove": true
-    },
-    {
       "path": "app/GoogleLocationHistory",
       "description": "",
       "remove": true
@@ -159,6 +154,41 @@
       "path": "app/com.google.android.modulemetadata",
       "description": "",
       "remove": false
+    },
+    {
+      "path": "app/com.android.fmradio",
+      "description": "Radio FM app",
+      "remove": true
+    },
+    {
+      "path": "app/com.inmobi.installer",
+      "description": "InMobi advertising software",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.android.apps.tachyon",
+      "description": "Google Duo video calling app",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.android.videos",
+      "description": "Google Play Movies & TV",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.android.apps.messaging",
+      "description": "Google Messages SMS app - Now use QKSMS instead",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.android.accessibility.switchaccess",
+      "description": "Switch Access accessibility tool",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.android.apps.safetyhub",
+      "description": "Google Safety Hub",
+      "remove": true
     }
   ],
 
@@ -280,7 +310,12 @@
     },
     {
       "path": "system/priv-app/MotoLauncher",
-      "description": "If you delete it, the 'home' gesture stops working for some reason",
+      "description": "If you delete it, the 'home' gesture stops working for some reason. Best Launcher is stock for smoothness & performance.",
+      "remove": false
+    },
+    {
+      "path": "system/priv-app/MotoCamera",
+      "description": "It aproaches all stock camera features, but GCam can be better sometimes. Test by yourself.",
       "remove": false
     },
     {
@@ -379,6 +414,41 @@
     {
       "path": "app/ClaroIntegration",
       "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.motocare",
+      "description": "Motorola Support app",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.notifications",
+      "description": "Motorola notifications service",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.vr.home",
+      "description": "Motorola VR home launcher",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.vr.service",
+      "description": "Motorola VR service",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.fmplayer",
+      "description": "Motorola FM radio player",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.demo",
+      "description": "Motorola demo app",
+      "remove": true
+    },
+    {
+      "path": "app/com.motorola.help",
+      "description": "Motorola help app",
       "remove": true
     }
   ]

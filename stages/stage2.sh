@@ -35,6 +35,10 @@ for dir in "${MNT_PARTITIONS[@]}"; do
     smount "${dir}"
 done
 
+# NOTE: Remove MotoCamera & CalculatorGoogle from bloatware.json. Photos?
+# TODO: Remove Google Files, replace with Matelial Files
+# TODO: Add Youtube ReVanced, MicroG, Browser (Tor or Brave Nightly), QMSMS, GCam BSG 8.9 + configs
+
 echo " "
 echo "[-] - Removed"
 echo "[+] - Added"

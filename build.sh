@@ -9,8 +9,8 @@ fi
 SUPER_IMAGE=$1
 UNPACKED_DIR="unpacked"
 
-echo "DebloatedMotoWeed Builder"
-echo "by DiabloSat"
+echo "g13se Builder"
+echo "by Nazabe"
 
 stage1() {
     if [ ! -d "$UNPACKED_DIR" ]; then
