@@ -21,7 +21,7 @@ if [ ! -f $SUPER_IMAGE ]; then
 fi
 
 # sudo apt install android-sdk-libsparse-utils jq
-if ! simg2img "$SUPER_IMAGE" "$SUPER_RAW"; then
+if ! /usr/bin/simg2img "$SUPER_IMAGE" "$SUPER_RAW"; then
     echo "[❌] Failed to convert super image"
     exit 1
 fi

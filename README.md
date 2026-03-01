@@ -1,16 +1,16 @@
-# DebloatedMotoWeed
-Custom firmware A14 without bloatware for penangf (Moto G13/G23), based on stock.
+# Moto g13se Builder
 
-<img src="https://github.com/user-attachments/assets/3bee99a8-1f69-40ff-bc5b-4db97e1affa5" width="400">
-
+Custom firmware A14 based on stock without bloatware for penangf Moto G13 & configuration for MGC8.9/LMC8.4 GCAM.
 
 ## Features
+
 - Removed Motorola bloatware software (even those that could not be removed manually).
-- Removed pre-installation of all the bloatware from Google (if we need it, we'll install it manually, right?).
-- Magisk pre-installed
+- Removed pre-installation of all the bloatware from Google.
+- Pre-installed lightweight open-source alternative applications.
 - Heavy applications have been replaced with alternatives **[In the process...]**
 
-## Manually build
+## How to build
+- Download your firmware from lolinet (https://mirrors.lolinet.com/firmware/lenomola/2023/penangf/official/)
 - Install dependecies
   ```shell
   sudo pacman -S android-tools

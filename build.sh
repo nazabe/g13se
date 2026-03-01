@@ -12,6 +12,8 @@ UNPACKED_DIR="unpacked"
 echo "g13se Builder"
 echo "by Nazabe"
 
+# TODO: Delete /upacked & super_raw.img if exist
+
 stage1() {
     if [ ! -d "$UNPACKED_DIR" ]; then
         echo "[⚙️] Proceeding to stage 1"
