@@ -9,8 +9,7 @@ fi
 SUPER_IMAGE=$1
 UNPACKED_DIR="unpacked"
 
-echo "g13se Builder"
-echo "by Nazabe"
+echo "Custom G13SE ROM Builder based on Stock"
 
 SUPER_DIR=$(dirname "$SUPER_IMAGE")
 SUPER_RAW="$SUPER_DIR/super_raw.img"

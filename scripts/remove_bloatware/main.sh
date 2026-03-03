@@ -21,7 +21,7 @@ APEX_BLOATWARE=()
 
 # NOTE: Remove MotoCamera & CalculatorGoogle from bloatware.json.
 # NOTE: Remove Google Files, replace with Material Files
-# TODO: Add Youtube ReVanced, MicroG, Browser (Tor or Brave Nightly), QKSMS.
+# TODO: Add Youtube ReVanced, MicroG, Browser (Tor or Brave Nightly).
 
 # Standard partitions — simple rm -rf
 BLOATWARE+=($(jq -r '.product_a[] | select(.remove == true) | "product_a/\(.path)"' "$CONFIG"))

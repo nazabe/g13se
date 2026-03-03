@@ -146,49 +146,14 @@
       "remove": true
     },
     {
-      "path": "app/GoogleOneTimeInitializer",
-      "description": "",
-      "remove": true
-    },
-    {
       "path": "app/com.google.android.modulemetadata",
       "description": "",
       "remove": false
     },
     {
-      "path": "app/com.android.fmradio",
-      "description": "Radio FM app",
-      "remove": true
-    },
-    {
-      "path": "app/com.inmobi.installer",
-      "description": "InMobi advertising software",
-      "remove": true
-    },
-    {
-      "path": "app/com.google.android.apps.tachyon",
-      "description": "Google Duo video calling app",
-      "remove": true
-    },
-    {
-      "path": "app/com.google.android.videos",
-      "description": "Google Play Movies & TV",
-      "remove": true
-    },
-    {
       "path": "app/com.google.android.apps.messaging",
       "description": "NOTE: Google Messages SMS app - Now use QKSMS instead",
-      "remove": true
-    },
-    {
-      "path": "app/com.google.android.accessibility.switchaccess",
-      "description": "Switch Access accessibility tool",
-      "remove": true
-    },
-    {
-      "path": "app/com.google.android.apps.safetyhub",
-      "description": "Google Safety Hub",
-      "remove": true
+      "remove": false
     },
     {
       "path": "app/CalendarGoogle",
@@ -258,6 +223,21 @@
     {
       "path": "priv-app/GoogleOneTimeInitializer",
       "description": "Google one-time device setup initializer — safe to remove post-setup",
+      "remove": true
+    },
+    {
+      "path": "app/MtkWallpaperPicker",
+      "description": "MTK basic wallpaper picker",
+      "remove": true
+    },
+    {
+      "path": "priv-app/SearchSelector",
+      "description": "Google default search engine selector",
+      "remove": true
+    },
+    {
+      "path": "app/MDIP",
+      "description": "Motorola Device Intelligence Platform - Telemetry",
       "remove": true
     }
   ],
@@ -411,6 +391,96 @@
       "path": "system/preinstall/MotoSpaces",
       "description": "",
       "remove": true
+    },
+    {
+      "path": "system/app/EasterEgg",
+      "description": "Android Easter Egg — pure bloatware",
+      "remove": true
+    },
+    {
+      "path": "system/app/Traceur",
+      "description": "System tracing/debugging tool — not needed in production",
+      "remove": true
+    },
+    {
+      "path": "system/app/GooglePrintRecommendationService",
+      "description": "Google printer suggestion service",
+      "remove": true
+    },
+    {
+      "path": "system/app/SimAppDialog",
+      "description": "SIM Toolkit popup dialog — causes spam popups",
+      "remove": true
+    },
+    {
+      "path": "system/app/NfcNci",
+      "description": "NFC service — my device has no NFC hardware",
+      "remove": true
+    },
+    {
+      "path": "system/app/BookmarkProvider",
+      "description": "Stock browser bookmark provider",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/CQATest",
+      "description": "Motorola factory QA testing tool",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/FpcTest",
+      "description": "Factory fingerprint sensor test tool",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/GFTest",
+      "description": "Google Factory test tool — manufacturing only",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/InlineSampleAutomate",
+      "description": "Factory automation testing tool",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/MusicFX",
+      "description": "Stock Android equalizer",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/CellBroadcastLegacyApp",
+      "description": "Legacy cell broadcast — replaced by modern system",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/Wallpaper",
+      "description": "Stock wallpaper app",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/SoundPicker",
+      "description": "Stock ringtone picker",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/Stk1",
+      "description": "SIM Toolkit — responsible for carrier spam popups",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/TagGoogle",
+      "description": "NFC tag reader — device has no NFC hardware",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/ThemeStub",
+      "description": "Empty theme stub — no real functionality",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/ShutdownAfterScreenOff10MinutesService",
+      "description": "Retail/demo mode service — shuts down device after 10min screen off",
+      "remove": true
     }
   ],
   "system_ext_a": [
@@ -440,11 +510,6 @@
       "remove": true
     },
     {
-      "path": "priv-app/MotoNotifications",
-      "description": "",
-      "remove": true
-    },
-    {
       "path": "priv-app/MotoCare",
       "description": "",
       "remove": true
@@ -456,11 +521,6 @@
     },
     {
       "path": "priv-app/VoiceCommand",
-      "description": "",
-      "remove": true
-    },
-    {
-      "path": "priv-app/SetupWizzard",
       "description": "",
       "remove": true
     },
@@ -482,41 +542,6 @@
     {
       "path": "app/ClaroIntegration",
       "description": "",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.motocare",
-      "description": "Motorola Support app",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.notifications",
-      "description": "Motorola notifications service",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.vr.home",
-      "description": "Motorola VR home launcher",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.vr.service",
-      "description": "Motorola VR service",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.fmplayer",
-      "description": "Motorola FM radio player",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.demo",
-      "description": "Motorola demo app",
-      "remove": true
-    },
-    {
-      "path": "app/com.motorola.help",
-      "description": "Motorola help app",
       "remove": true
     },
     {
@@ -558,23 +583,68 @@
       "path": "priv-app/SetupWizard",
       "description": "Already handled via SetupWizzard entry — confirm folder name spelling",
       "remove": true
+    },
+    {
+      "path": "priv-app/daxService",
+      "description": "Dolby Atmos daemon — DolbySound APK already removed, this is the background service",
+      "remove": true
+    },
+    {
+      "path": "app/DebugLoggerUI",
+      "description": "MTK debug logging UI — development only",
+      "remove": true
+    },
+    {
+      "path": "app/BatteryWarning",
+      "description": "MTK battery warning — Android handles this natively",
+      "remove": true
+    },
+    {
+      "path": "priv-app/WallpaperCropper",
+      "description": "Wallpaper cropper — unnecessary without MtkWallpaperPicker",
+      "remove": true
+    },
+    {
+      "path": "priv-app/Omacp",
+      "description": "Carrier APN auto-configuration — potential spam source",
+      "remove": true
+    },
+    {
+      "path": "app/3c_main",
+      "description": "Companion to 3c_ota (already removed) — Motorola OTA client",
+      "remove": true
+    },
+    {
+      "path": "app/GmsEEAType4cIntegration",
+      "description": "GMS GDPR compliance integration for EU — irrelevant outside Europe",
+      "remove": true
+    },
+    {
+      "path": "app/DefaultIntegration",
+      "description": "Motorola generic integration stub",
+      "remove": true
+    },
+    {
+      "path": "app/MiraVision",
+      "description": "MTK display enhancement engine — similar to Dolby Vision for display",
+      "remove": true
     }
   ],
   "system_a_apex": [
     {
       "path": "system/apex/com.android.nfcservices",
-      "description": "NFC services APEX — my device has no NFC hardware :( safe to remove",
-      "remove": true
+      "description": "NFC APEX — device has no NFC hardware. APEX handling not yet implemented.",
+      "remove": false
     },
     {
       "path": "system/apex/EasterEgg",
-      "description": "Android Easter Egg — for me, pure bloatware",
-      "remove": true
+      "description": "Android Easter Egg APEX. APEX handling not yet implemented.",
+      "remove": false
     },
     {
       "path": "system/apex/SimAppDialog",
-      "description": "SIM toolkit popup dang spam",
-      "remove": true
+      "description": "SIM Toolkit APEX. APEX handling not yet implemented.",
+      "remove": false
     }
   ]
 }
