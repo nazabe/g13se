@@ -409,8 +409,8 @@
     },
     {
       "path": "system/app/SimAppDialog",
-      "description": "SIM Toolkit popup dialog — causes spam popups",
-      "remove": true
+      "description": "TODO: SIM Toolkit popup dialog — causes spam popups",
+      "remove": false
     },
     {
       "path": "system/app/NfcNci",
@@ -464,8 +464,8 @@
     },
     {
       "path": "system/priv-app/Stk1",
-      "description": "SIM Toolkit — responsible for carrier spam popups",
-      "remove": true
+      "description": "TODO: SIM Toolkit — responsible for carrier spam popups",
+      "remove": false
     },
     {
       "path": "system/priv-app/TagGoogle",
@@ -566,7 +566,7 @@
     },
     {
       "path": "priv-app/GsmSimProcessor",
-      "description": "Carrier SIM data processor — safe to remove if not using carrier-specific services",
+      "description": "TODO: Carrier SIM data processor — safe to remove if not using carrier-specific services",
       "remove": false
     },
     {

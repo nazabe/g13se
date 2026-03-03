@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ "$#" -ne 1 ]; then
     echo "[x] Incorrect arguments!"
     echo "     Using: $0 <BASE_DIR>"
@@ -20,8 +21,8 @@ APEX_BLOATWARE=()
 # sudo umount unpacked/mnt/system_a unpacked/mnt/product_a unpacked/mnt/system_ext_a
 
 # NOTE: Remove MotoCamera & CalculatorGoogle from bloatware.json.
-# NOTE: Remove Google Files, replace with Material Files
-# TODO: Add Youtube ReVanced, MicroG, Browser (Tor or Brave Nightly).
+
+# TODO: Add Youtube ReVanced, MicroG.
 
 # Standard partitions — simple rm -rf
 BLOATWARE+=($(jq -r '.product_a[] | select(.remove == true) | "product_a/\(.path)"' "$CONFIG"))
@@ -62,3 +63,30 @@ if [ ${#APEX_BLOATWARE[@]} -gt 0 ]; then
         fi
     done
 fi
+
+# NOTE: This is the list of all the apps on the device
+
+# ls unpacked/mnt/product_a/app 
+# CalculatorGoogle  com.google.android.modulemetadata  DeskClockGoogle  LatinImeGoogle  NonFrameworkLbs  TrichromeLibrary  WebViewGoogle
+
+# ls unpacked/mnt/product_a/priv-app
+# CarrierSettings  ConfigUpdater  CrossDeviceServices  GmsCore  GoogleCarrierWifi  GoogleDialer  ImsServiceEntitlement  Phonesky  SettingsIntelligence  Wellbeing
+
+# ls unpacked/mnt/system_a/system/app
+# BluetoothMidiService   CaptivePortalLoginGoogle  CertInstaller    HTMLViewer  MtkPrivacyPolicy  PrintSpooler
+# CameraExtensionsProxy  CarrierDefaultApp         GoogleExtShared  KeyChain    PacProcessor      SecureElement
+
+# ls unpacked/mnt/system_a/system/priv-app
+# BackupRestoreConfirmation  DownloadProvider                  InputDevices         MotoLauncher                              MtkTelecom            SharedStorageBackup
+# BlockedNumberProvider      DownloadProviderUi                IntentResolver       MotorolaSettingsProviderExternalPrebuilt  MtkTelephonyProvider  Shell
+# BuiltInPrintService        DynamicSystemInstallationService  LocalTransport       MtkCalendarProvider                       MtkTeleService        UserDictionaryProvider
+# CallLogBackup              ExternalStorageProvider           MediaProviderLegacy  MtkContactsProvider                       MtpService            VpnDialogs
+# CredentialManager          FusedLocation                     Messages             MtkMmsService                             NetworkStackGoogle
+# DocumentsUIGoogle          GooglePackageInstaller            MotoCamera           MtkPowerTouch                             ProxyHandler
+
+# ls unpacked/mnt/system_ext_a/app
+# mediatek-res  TeeService
+
+# ls unpacked/mnt/system_ext_a/priv-app
+# CarrierConfig     GmsSimProcessor          ImsService   ModemStatsService  MtkGbaService  MtkSettingsProvider  MtkTelephonyAssist
+# DeviceManagement  GoogleServicesFramework  LPPeService  MtkCapCtrl         MtkSettings    MtkSystemUI          StorageManager

@@ -16,7 +16,7 @@ smount() {
 FS=$1
 UNPACKED_DIR=$2
 MNT_BASE="${2}/mnt"
-MNT_PARTITIONS=("system_a" "product_a" "system_ext_a")
+MNT_PARTITIONS=("system_a" "product_a" "system_ext_a" "vendor_a")
 
 if [ ! -d "$MNT_BASE" ]; then
     mkdir -p "$MNT_BASE"
@@ -24,6 +24,11 @@ if [ ! -d "$MNT_BASE" ]; then
 else
     echo "[?] Directory $MNT_BASE already exists"
 fi
+
+# Resize vendor_a to ensure enough space for modifications (Camelia Brightness Fix)
+echo "[⚙️] Resizing vendor_a.img to ensure free space..."
+e2fsck -f "${UNPACKED_DIR}/vendor_a.img" -y
+resize2fs "${UNPACKED_DIR}/vendor_a.img" $(($(du -m "${UNPACKED_DIR}/vendor_a.img" | cut -f1) + 1))M
 
 for dir in "${MNT_PARTITIONS[@]}"; do
     if [ ! -d "${MNT_BASE}/$dir" ]; then
@@ -45,6 +50,7 @@ echo " "
 ./scripts/modify_configs/configs.sh $MNT_BASE
 ./scripts/modify_configs/props.sh $MNT_BASE
 ./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
+./scripts/brightness_fix/brightness_fix.sh $MNT_BASE
 
 echo "All images unmounted"
 sudo umount ${MNT_BASE}/*

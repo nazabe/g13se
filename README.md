@@ -1,6 +1,6 @@
 # Moto g13se Builder
 
-Custom firmware A14 based on stock without bloatware for penangf Moto G13 & configuration for MGC8.9/LMC8.4 GCAM.
+Custom firmware A14 based on stock without bloatware for penangf Moto G13 & configuration for LMC8.4 GCAM.
 
 ## Features
 
