@@ -36,17 +36,17 @@
       "remove": true
     },
     {
-      "path": "FamilyLinkParentalControls",
+      "path": "priv-app/FamilyLinkParentalControls",
       "description": "",
       "remove": true
     },
     {
-      "path": "GooglePartnerSetup",
+      "path": "priv-app/GooglePartnerSetup",
       "description": "",
       "remove": true
     },
     {
-      "path": "AndroidAutoStub",
+      "path": "priv-app/AndroidAutoStub",
       "description": "",
       "remove": true
     },
@@ -177,7 +177,7 @@
     },
     {
       "path": "app/com.google.android.apps.messaging",
-      "description": "Google Messages SMS app - Now use QKSMS instead",
+      "description": "NOTE: Google Messages SMS app - Now use QKSMS instead",
       "remove": true
     },
     {
@@ -189,9 +189,78 @@
       "path": "app/com.google.android.apps.safetyhub",
       "description": "Google Safety Hub",
       "remove": true
+    },
+    {
+      "path": "app/CalendarGoogle",
+      "description": "Google Calendar app",
+      "remove": true
+    },
+    {
+      "path": "app/GoogleContacts",
+      "description": "Google Contacts app — MtkContactsProvider is kept as system dependency",
+      "remove": true
+    },
+    {
+      "path": "app/Keep",
+      "description": "Google Keep notes app",
+      "remove": true
+    },
+    {
+      "path": "app/SpeechServicesByGoogle",
+      "description": "Google speech recognition service",
+      "remove": true
+    },
+    {
+      "path": "app/SwitchAccess",
+      "description": "Switch Access accessibility tool — already listed by package name, adding folder name",
+      "remove": true
+    },
+    {
+      "path": "app/talkback",
+      "description": "Google TalkBack screen reader",
+      "remove": true
+    },
+    {
+      "path": "priv-app/AssistantShell",
+      "description": "Google Assistant shell — already have Velvet listed, this is the companion",
+      "remove": true
+    },
+    {
+      "path": "priv-app/FilesGoogle",
+      "description": "Google Files app — replace with Material Files",
+      "remove": true
+    },
+    {
+      "path": "priv-app/PersonalSafety",
+      "description": "Google Personal Safety app",
+      "remove": true
+    },
+    {
+      "path": "priv-app/PrivateComputeServices",
+      "description": "Google on-device ML telemetry service",
+      "remove": true
+    },
+    {
+      "path": "priv-app/OrangeManualSelector",
+      "description": "Orange carrier bloatware",
+      "remove": true
+    },
+    {
+      "path": "priv-app/PhoneSky",
+      "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GsmCore",
+      "description": "WARNING: GSM stack, NOT Google Play Services. Do NOT remove — handles calls and mobile data",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GoogleOneTimeInitializer",
+      "description": "Google one-time device setup initializer — safe to remove post-setup",
+      "remove": true
     }
   ],
-
   "system_a": [
     {
       "path": "system/app/CompanionDeviceManager",
@@ -344,7 +413,6 @@
       "remove": true
     }
   ],
-
   "system_ext_a": [
     {
       "path": "priv-app/PAKS",
@@ -449,6 +517,63 @@
     {
       "path": "app/com.motorola.help",
       "description": "Motorola help app",
+      "remove": true
+    },
+    {
+      "path": "priv-app/DolbySound",
+      "description": "Dolby Atmos — my benchmarks confirm it degrades audio quality",
+      "remove": true
+    },
+    {
+      "path": "priv-app/AccessibilityMenu",
+      "description": "Google floating accessibility menu — does not affect system stability",
+      "remove": true
+    },
+    {
+      "path": "priv-app/EmergencyInfoGms",
+      "description": "Google Emergency Info — removing intentionally",
+      "remove": true
+    },
+    {
+      "path": "priv-app/FMRadio",
+      "description": "FM Radio app — already removed via system_a, this is system_ext copy",
+      "remove": true
+    },
+    {
+      "path": "priv-app/GsmSimProcessor",
+      "description": "Carrier SIM data processor — safe to remove if not using carrier-specific services",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GoogleServicesFramework",
+      "description": "WARNING: Remove only when MicroG GSF replacement is confirmed working",
+      "remove": false
+    },
+    {
+      "path": "priv-app/QuickAccessWallet",
+      "description": "Google Pay quick access on lockscreen",
+      "remove": true
+    },
+    {
+      "path": "priv-app/SetupWizard",
+      "description": "Already handled via SetupWizzard entry — confirm folder name spelling",
+      "remove": true
+    }
+  ],
+  "system_a_apex": [
+    {
+      "path": "system/apex/com.android.nfcservices",
+      "description": "NFC services APEX — my device has no NFC hardware :( safe to remove",
+      "remove": true
+    },
+    {
+      "path": "system/apex/EasterEgg",
+      "description": "Android Easter Egg — for me, pure bloatware",
+      "remove": true
+    },
+    {
+      "path": "system/apex/SimAppDialog",
+      "description": "SIM toolkit popup dang spam",
       "remove": true
     }
   ]

@@ -12,7 +12,18 @@ UNPACKED_DIR="unpacked"
 echo "g13se Builder"
 echo "by Nazabe"
 
-# TODO: Delete /upacked & super_raw.img if exist
+SUPER_DIR=$(dirname "$SUPER_IMAGE")
+SUPER_RAW="$SUPER_DIR/super_raw.img"
+
+if [ -d "$UNPACKED_DIR" ]; then
+    echo "[🗑️] Removing old unpacked directory..."
+    rm -rf "$UNPACKED_DIR"
+fi
+
+if [ -f "$SUPER_RAW" ]; then
+    echo "[🗑️] Removing old super_raw.img..."
+    rm -f "$SUPER_RAW"
+fi
 
 stage1() {
     if [ ! -d "$UNPACKED_DIR" ]; then

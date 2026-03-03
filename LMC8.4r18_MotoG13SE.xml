@@ -116,8 +116,8 @@
     <string name="lib_lumadlsabre_l4b_pro_key">0</string>
     <string name="lib_lumadmsabre_l5_pro_key">0</string>
     <string name="lib_spatialdenmi2_key_5">0</string>
-    <!-- MACRO FOCUS: 28 diopters = ~3.6cm. Subido porque sensor tiende a enfocar al fondo -->
-    <!-- Ajuste fino: 30=3.3cm (más cerca), 26=3.8cm, 25=4cm -->
+    <!-- MACRO FOCUS: 28 diopters = ~3.6cm. Raised because sensor tends to focus on background -->
+    <!-- Fine tuning: 30=3.3cm (closer), 26=3.8cm, 25=4cm -->
     <string name="m_focus_key">28</string>
     <string name="lib_spatialdenmi2_key_4">0</string>
     <string name="lib_orgb_key_2">0</string>
@@ -139,10 +139,10 @@
     <string name="lib_liteldrhigh_key_2">0</string>
     <string name="user_7_text"></string>
     <string name="lib_lumadhsabre_l3b_key_2">0</string>
-    <!-- RESOLUCIONES BLOQUEADAS FOTO: 8000x6000 no existe en este sensor -->
+    <!-- BLACKLISTED PHOTO RESOLUTIONS: 8000x6000 does not exist on this sensor -->
     <string name="blacklisted_resolutions_back">8000x6000</string>
-    <!-- RESOLUCIONES BLOQUEADAS VIDEO: 4080x2296 y 4080x3072 crashean en video (Helio G85) -->
-    <!-- Máximo estable para video: 3840x2160 @30fps o 1920x1080 @60fps -->
+    <!-- BLACKLISTED VIDEO RESOLUTIONS: 4080x2296 and 4080x3072 crash in video mode (Helio G85) -->
+    <!-- Maximum stable for video: 3840x2160 @30fps or 1920x1080 @60fps -->
     <string name="blacklisted_video_resolutions_back">4080x2296,4080x3072,4080x1836,3264x2448,3072x3072,2560x1920</string>
     <string name="lib_spatialdenmi2_pro_key">0</string>
     <string name="lib_hdrbrightness_key_3">0</string>
@@ -168,7 +168,7 @@
     <string name="pref_opmode_portrait_key_2">0</string>
     <string name="pref_opmode_portrait_key_4">0</string>
     <string name="pref_opmode_portrait_key_3">0</string>
-    <!-- ZOOM SLIDER: 0 = ocultar barra horizontal de zoom x1-x2 en la parte inferior -->
+    <!-- ZOOM SLIDER: 0 = hide horizontal zoom bar (x1-x2) at the bottom -->
     <string name="pref_pzoom_key">0</string>
     <string name="pref_lib_chroma_l1_teleplus_key">2009</string>
     <string name="gr_3_key">-0.148</string>
@@ -195,8 +195,8 @@
     <string name="lib_lumadlsabre_l3b_key_5">0</string>
     <string name="lib_hdrrangeminus_pro_key">0</string>
     <string name="lib_lumadlsabre_l3b_key_2">0</string>
-    <!-- FOTO ALTERNATIVA: 2560x1920 (~5MP, 4:3) — buena para compartir, menor peso de archivo -->
-    <!-- Para 8MP usa 3264x2448, para cuadrado usa 3072x3072 -->
+    <!-- ALTERNATIVE PHOTO: 2560x1920 (~5MP, 4:3) — good for sharing, smaller file size -->
+    <!-- For 8MP use 3264x2448, for square use 3072x3072 -->
     <string name="pref_camera_picturesize_3rd_key">3264x2448</string>
     <string name="pref_lib_hdr_intensity_tele_key">60000</string>
     <string name="pref_video_aspect_ratio">SIXTEEN_BY_NINE</string>
@@ -332,8 +332,8 @@
     <string name="lib_lumadmsabre_l5a_key_3">0</string>
     <string name="lib_sabrelnewn_l5_key_3">0</string>
     <string name="lib_lumadhs_l3_key_front">0</string>
-    <!-- ISO NOISE COEFF: 0.35 = AE más conservadora con ISO al hacer zoom. Default era 0.5 -->
-    <!-- Si las fotos nocturnas quedan muy oscuras, subir a 0.45 -->
+    <!-- ISO NOISE COEFF: 0.35 = more conservative AE with ISO when zooming. Default was 0.5 -->
+    <!-- If night shots are too dark, raise to 0.45 -->
     <string name="pref_iso_noise_coeff_key">0.35</string>
     <string name="lib_lumadlsabre_l2_key_front">0</string>
     <string name="pref_design_key">0</string>
@@ -364,7 +364,7 @@
     <string name="pref_show_buttons_key">1</string>
     <string name="lib_lumadms_l5_key_front">0</string>
     <string name="pref_lib_exposure_compensation_wide_key">60000</string>
-    <!-- NOISE MODEL FRONT: MANUAL para mayor precisión -->
+    <!-- NOISE MODEL FRONT: MANUAL for higher precision -->
     <string name="pref_noise_modeler_front_key">MANUAL</string>
     <string name="pref_focus_lock_time_key">2</string>
     <string name="lib_saturation_key_4">0</string>
@@ -466,7 +466,7 @@
     <string name="lib_coefsabrtunoise_key_4">0</string>
     <string name="lib_lumadhsabre_l3a_pro_key">0</string>
     <string name="lib_coefsabrtunoise_key_3">0</string>
-    <!-- ZOOM MACRO (ID 2 = wide en esta config): máximo 1.3x digital, estable según pruebas -->
+    <!-- ZOOM MACRO (ID 2 = wide in this config): max 1.3x digital, stable according to tests -->
     <string name="pref_max_zoom_key_wide">1.3</string>
     <string name="pref_izoom_key_wide">1</string>
     <string name="lib_coefsabrtunoise_key_5">0</string>
@@ -538,7 +538,7 @@
     <string name="lib_allowtemporalbinning_key_2">0</string>
     <string name="lib_lumadhsabre_l3b_key">0</string>
     <string name="lib_allowtemporalbinning_key_3">0</string>
-    <!-- VIDEO 4K FPS: 30fps es el máximo estable en 4K para el Helio G85 -->
+    <!-- VIDEO 4K FPS: 30fps is the maximum stable framerate in 4K for the Helio G85 -->
     <string name="pref_video_fps_4k_key">FPS_30</string>
     <string name="lib_allowtemporalbinning_key_4">0</string>
     <string name="rr_0_key">1.68</string>
@@ -639,7 +639,7 @@
     <string name="pref_lib_hdr_range_plus_tele_key">60000</string>
     <string name="pref_lib_luma_l4_wide_key">2009</string>
     <string name="pref_lib_luma_l1_teleplus_key">2009</string>
-    <!-- ISO MAX ID 4 (cámara lógica): 1600 -->
+    <!-- ISO MAX ID 4 (logical camera): 1600 -->
     <string name="pref_manual_iso_noise_key_4">1600</string>
     <!-- ISO MAX ID 5: 1600 -->
     <string name="pref_manual_iso_noise_key_5">1600</string>
@@ -654,7 +654,7 @@
     <string name="lib_lumadms_l3_key">0</string>
     <string name="d65_rg_key_front">0.48314</string>
     <string name="pref_lib_chroma_l2_tele_key">2009</string>
-    <!-- ISO MAX ID 2 (MACRO): 800 — sensor LIMITED ruidoso -->
+    <!-- ISO MAX ID 2 (MACRO): 800 — LIMITED noisy sensor -->
     <string name="pref_manual_iso_noise_key_2">800</string>
     <!-- ISO MAX ID 3: 1600 -->
     <string name="pref_manual_iso_noise_key_3">1600</string>
@@ -754,7 +754,7 @@
     <string name="lib_gainrad_key_3">0</string>
     <string name="pref_model_aux_key">10</string>
     <string name="lib_spatialb_key">0</string>
-    <!-- VIDEO 1080p FPS: 30fps estable. Cambiar a FPS_60 para probar 60fps en 1080p -->
+    <!-- VIDEO 1080p FPS: 30fps stable. Change to FPS_60 to test 60fps at 1080p -->
     <string name="pref_video_fps_key">FPS_30</string>
     <string name="lib_sharpshastamotion_key_5">0</string>
     <string name="lib_gainrad_pro_key">0</string>
@@ -909,8 +909,8 @@
     <string name="lib_wbbaseframe_key_4">0</string>
     <string name="lib_brightnessintensity_key">0</string>
     <string name="pref_use_hdr_instant_key">1</string>
-    <!-- ISO MÁXIMO DE PROCESAMIENTO: 1600 en vez de 3200 — reduce ruido en zoom de video -->
-    <!-- Para Night Sight muy oscuro podés subir a 2400 -->
+    <!-- MAX PROCESSING ISO: 1600 instead of 3200 — reduces noise in video zoom -->
+    <!-- For very dark Night Sight you can raise to 2400 -->
     <string name="pref_manual_iso_noise_key">1600</string>
     <string name="lib_light_key">0</string>
     <string name="gb_2_key">0.086</string>
@@ -1028,8 +1028,8 @@
     <string name="lib_lumadm_l3_key_front">0</string>
     <string name="pref_mf_near_key">14.29</string>
     <string name="lib_lumadlsabre_l4a_pro_key">0</string>
-    <!-- NOISE MODEL BACK: MANUAL usa los coeficientes noise_modeler_manual_* definidos en este XML -->
-    <!-- OV5647_GOOGLE era incorrecto (sensor de Raspberry Pi) — MANUAL es más preciso para este sensor -->
+    <!-- NOISE MODEL BACK: MANUAL uses noise_modeler_manual_* coefficients defined in this XML -->
+    <!-- OV5647_GOOGLE was incorrect (Raspberry Pi sensor) — MANUAL is more accurate for this sensor -->
     <string name="pref_noise_modeler_back_key">MANUAL</string>
     <string name="lib_lumadls_l1_key">0</string>
     <string name="pref_lib_chroma1_l2_teleplus_key">2009</string>
@@ -1155,7 +1155,7 @@
     <string name="pref_noise_modeler_manual_a_2_key_5">1.0785347E-5</string>
     <string name="lib_cg6_key_4">0</string>
     <string name="lib_sharpeningedge_key_front">0</string>
-    <!-- FOTO PRINCIPAL: 4080x3072 = máximo físico del sensor (~12.5MP real en 4:3). Mayor área de captura -->
+    <!-- MAIN PHOTO: 4080x3072 = physical maximum of the sensor (~12.5MP real in 4:3). Largest capture area -->
     <string name="pref_camera_picturesize_back_key">4080x3072</string>
     <string name="pref_noise_modeler_manual_a_2_key_4">1.0785347E-5</string>
     <string name="lib_cg6_key_3">0</string>
@@ -1283,10 +1283,10 @@
     <string name="lib_lumadl_l5_key_front">0</string>
     <string name="h_bg_key">0.27259</string>
     <string name="lib_lumadlsabre_l4_key_front">0</string>
-    <!-- MAX FOCUS ID 3: no documentado en probe, se mantiene en rango amplio -->
+    <!-- MAX FOCUS ID 3: not documented in probe, kept at wide range -->
     <string name="pref_max_focus_value_key_3">30.0</string>
     <string name="lib_cg1_key_2">0</string>
-    <!-- MAX FOCUS ID 2 (MACRO): 30.0 diopters para alcanzar los 4cm (25 diopters) con margen -->
+    <!-- MAX FOCUS ID 2 (MACRO): 30.0 diopters to reach 4cm (25 diopters) with margin -->
     <string name="pref_max_focus_value_key_2">30.0</string>
     <string name="lib_cg1_key_3">0</string>
     <string name="pref_lib_dehaze_tele_key">60000</string>
@@ -1707,7 +1707,7 @@
     <string name="pref_zoom_in_command_string">-1</string>
     <string name="pref_Copmode_night_key_5">0</string>
     <string name="pref_dbl_key_front">0</string>
-    <!-- ESTABILIZACION: 3 = OIS+EIS combinado. Cambia a 2 si hay problemas de jello/wobble en video -->
+    <!-- STABILIZATION: 3 = OIS+EIS combined. Switch to 2 if jello/wobble issues appear in video -->
     <string name="pref_ois_key">3</string>
     <string name="pref_Copmode_night_key_3">0</string>
     <string name="pref_camera_dynamic_depth_enabled_key">1</string>
@@ -1805,7 +1805,7 @@
     <string name="d50_rg_key">0.56849</string>
     <string name="CCT_WB_intensity_key">1.0</string>
     <!-- TOPBAR near focus = 25 diopters = ~4cm (macro sweet spot) -->
-        <!-- TOPBAR near = 28 diopters = ~3.6cm (macro sweet spot ajustado) -->
+        <!-- TOPBAR near = 28 diopters = ~3.6cm (adjusted macro sweet spot) -->
     <string name="pref_topbar_focus_near_key">28.0</string>
     <string name="lib_saturation3_key_4">0</string>
     <string name="lib_sabrelnewn_l1_key_5">0</string>
@@ -1961,7 +1961,7 @@
     <string name="pref_lib_color_tuning_2_key">60000</string>
     <string name="lib_lumadh_l4_key_front">0</string>
     <string name="pref_lib_darken_light_1_wide_key">60000</string>
-    <!-- NOISE MODEL AUX (MACRO): MANUAL para usar coeficientes definidos en el XML -->
+    <!-- NOISE MODEL AUX (MACRO): MANUAL to use coefficients defined in the XML -->
     <string name="pref_noise_modeler_aux_key">MANUAL</string>
     <string name="pref_B_hue_key_2">0</string>
     <string name="lib_lumadm_l3_key_4">0</string>
@@ -2188,7 +2188,7 @@
     <string name="lib_lumadlsabre_l2b_key_5">0</string>
     <string name="lib_user_value_10"></string>
     <string name="lib_simultaneousmerge_pro_key">0</string>
-    <!-- VIDEO CODEC: HEVC/H.265 habilitado — mejor calidad por bitrate que H.264 -->
+    <!-- VIDEO CODEC: HEVC/H.265 enabled — better quality per bitrate than H.264 -->
     <string name="pref_video_hevc_setting_key">1</string>
     <string name="lib_expocomp_key_3">0</string>
     <string name="lib_hdrraw2_key_5">0</string>
@@ -2797,7 +2797,7 @@
     <string name="lib_lightfix2_key_5">0</string>
     <string name="lib_vignettec_key_4">0</string>
     <string name="lib_vignettec_key_5">0</string>
-    <!-- ISO COEFF ID 2 (MACRO): 0.25 — más agresivo en limitar ISO en sensor pequeño -->
+    <!-- ISO COEFF ID 2 (MACRO): 0.25 — more aggressive ISO limiting on small sensor -->
     <string name="pref_iso_noise_coeff_key_2">0.25</string>
     <!-- ISO COEFF ID 4: 0.35 -->
     <string name="pref_iso_noise_coeff_key_4">0.35</string>
@@ -3037,8 +3037,8 @@
     <string name="green_key_tele">1.0</string>
     <string name="lib_lumadhsabre_l2a_pro_key">0</string>
     <string name="pref_opmode_night_key">0</string>
-    <!-- AF MODE ID 2 (MACRO): 2 = Manual focus forzado. El sensor es foco fijo, AF causa confusión -->
+    <!-- AF MODE ID 2 (MACRO): 2 = forced manual focus. Sensor is fixed-focus, AF causes confusion -->
     <string name="pref_af_mode_back_2">2</string>
-    <!-- BARRA DE BRILLO/ISO: 1 = lateral derecho, 0 = lateral izquierdo (default) -->
+    <!-- BRIGHTNESS/ISO BAR: 1 = right side, 0 = left side (default) -->
     <string name="pref_brightness_seekbar_right_key">1</string>
 </map>
