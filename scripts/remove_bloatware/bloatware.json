@@ -212,7 +212,7 @@
     },
     {
       "path": "priv-app/PhoneSky",
-      "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
+      "description": "TODO: Google Play Store — Replaced by MicroG PhoneSky stub, test it on runtime",
       "remove": false
     },
     {
@@ -238,6 +238,11 @@
     {
       "path": "app/MDIP",
       "description": "Motorola Device Intelligence Platform - Telemetry",
+      "remove": true
+    },
+    {
+      "path": "priv-app/GmsCore",
+      "description": "TODO: Replaced by MicroG GmsCore, test it on runtime",
       "remove": true
     }
   ],
@@ -571,8 +576,8 @@
     },
     {
       "path": "priv-app/GoogleServicesFramework",
-      "description": "WARNING: Remove only when MicroG GSF replacement is confirmed working",
-      "remove": false
+      "description": "TODO: Replaced by MicroG GoogleServicesFramework, test it on runtime",
+      "remove": true
     },
     {
       "path": "priv-app/QuickAccessWallet",
