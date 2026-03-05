@@ -94,6 +94,22 @@ ADD_PROP_LIST=(
 
     # ── SetupWizard ──────────────────────────────────────────────
     "ro.setupwizard.mode=DISABLE"                   # Skip SetupWizard (temporary solution for MicroG)
+
+    # ── Android 14 Features ──────────────────────────────────────
+    "persist.sys.predictive_back=1"              # Predictive back gesture animation
+    "ro.predictive_back_gesture_enabled=1"       # Enables the pullback animation
+    "persist.wm.debug.predictive_back=1"         # Activation force in WM
+
+    # ── Lockscreen ───────────────────────────────────────────────
+    "persist.sys.keyguard.clock_face=digital_clock"  # Modern clock style
+    "ro.lockscreen.widgets.enabled=true"             # Enable widgets on lockscreen
+
+    # ── Fuentes y UI ─────────────────────────────────────────────
+    "persist.sys.ui.hw=true"                     # Hardware acceleration throughout the UI
+    "ro.config.ringtone_haptics=1"               # Haptics on notifications
+
+    # ── Media player en notificaciones ──────────────────────────
+    "persist.sys.media_controls_lockscreen=true" # New media player on lockscreen
 )
 
 # Props that ALREADY EXIST in stock build.prop — must use edit_prop to avoid duplicates
@@ -107,8 +123,8 @@ EDIT_PROP_LIST=(
     "dalvik.vm.useartservice=true"                  # Stock: true — already correct, no change
 
     # ── dex2oat / dexopt ────────────────────────────────────────
-    "pm.dexopt.first-boot=speed-profile"            # Stock: verify — faster first boot
-    "pm.dexopt.boot-after-ota=speed-profile"        # Stock: verify — faster post-OTA boot
+    "pm.dexopt.first-boot=verify"
+    "pm.dexopt.boot-after-ota=verify"
 
     # ── Privacy / DeGoogle ───────────────────────────────────────
     "ro.com.google.clientidbase="                   # Stock: android-motorola — must edit, not append
@@ -126,6 +142,8 @@ EDIT_PROP_LIST=(
     # ── Refresh Rate to 90hz ─────────────────────────────────────
     "ro.surface_flinger.set_frame_rate_multiple_threshold=0"
     "debug.sf.set_idle_timer_ms=0"
+
+    "ro.surface_flinger.enable_frame_rate_override=true"  # Allows you to disable FPS per application
 )
 
 append_prop() {
