@@ -40,29 +40,29 @@ for package in "${BLOATWARE[@]}"; do
 done
 
 # APEX packages — cannot be deleted, replaced with empty stub instead
-APEX_BLOATWARE+=($(jq -r '.system_a_apex[] | select(.remove == true) | "system_a/\(.path)"' "$CONFIG"))
+# APEX_BLOATWARE+=($(jq -r '.system_a_apex[] | select(.remove == true) | "system_a/\(.path)"' "$CONFIG"))
 
-if [ ${#APEX_BLOATWARE[@]} -gt 0 ]; then
-    echo ""
-    echo "[⚙️] Processing APEX packages..."
-    for apex_path in "${APEX_BLOATWARE[@]}"; do
-        TARGET="${BASE_DIR}/${apex_path}"
-        # APEX packages can appear as a directory or as a .apex file
-        if [ -d "$TARGET" ]; then
-            echo "[-] Stubbing APEX directory: ${TARGET}"
-            sudo rm -rf "$TARGET"
-            sudo mkdir -p "$TARGET"
-        elif [ -f "${TARGET}.apex" ]; then
-            echo "[-] Stubbing APEX file: ${TARGET}.apex"
-            sudo truncate -s 0 "${TARGET}.apex"
-        elif [ -f "${TARGET}" ]; then
-            echo "[-] Stubbing APEX file: ${TARGET}"
-            sudo truncate -s 0 "${TARGET}"
-        else
-            echo "[?] APEX not found (skipping): ${TARGET}"
-        fi
-    done
-fi
+# if [ ${#APEX_BLOATWARE[@]} -gt 0 ]; then
+#     echo ""
+#     echo "[⚙️] Processing APEX packages..."
+#     for apex_path in "${APEX_BLOATWARE[@]}"; do
+#         TARGET="${BASE_DIR}/${apex_path}"
+#         # APEX packages can appear as a directory or as a .apex file
+#         if [ -d "$TARGET" ]; then
+#             echo "[-] Stubbing APEX directory: ${TARGET}"
+#             sudo rm -rf "$TARGET"
+#             sudo mkdir -p "$TARGET"
+#         elif [ -f "${TARGET}.apex" ]; then
+#             echo "[-] Stubbing APEX file: ${TARGET}.apex"
+#             sudo truncate -s 0 "${TARGET}.apex"
+#         elif [ -f "${TARGET}" ]; then
+#             echo "[-] Stubbing APEX file: ${TARGET}"
+#             sudo truncate -s 0 "${TARGET}"
+#         else
+#             echo "[?] APEX not found (skipping): ${TARGET}"
+#         fi
+#     done
+# fi
 
 # NOTE: This is the list of all the apps on the device
 

@@ -23,8 +23,7 @@ set_permissions() {
     sudo chown 0:0 $1
     sudo chmod 0644 $1
 
-    # what this even mean
-    # sudo setfattr -n security.selinux -v u:object_r:system_file:s0 $1
+    sudo setfattr -n security.selinux -v u:object_r:system_file:s0 $1
 }
 
 for item in "${files[@]:0:2}"; do

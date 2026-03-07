@@ -156,6 +156,11 @@
       "remove": false
     },
     {
+      "path": "app/GoogleMessages",
+      "description": "NOTE: Google Messages SMS app - Now use QKSMS instead",
+      "remove": false
+    },
+    {
       "path": "app/CalendarGoogle",
       "description": "Google Calendar app",
       "remove": true
@@ -212,7 +217,7 @@
     },
     {
       "path": "priv-app/PhoneSky",
-      "description": "TODO: Google Play Store — Replaced by MicroG PhoneSky stub, test it on runtime",
+      "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
       "remove": false
     },
     {
@@ -238,11 +243,6 @@
     {
       "path": "app/MDIP",
       "description": "Motorola Device Intelligence Platform - Telemetry",
-      "remove": true
-    },
-    {
-      "path": "priv-app/GmsCore",
-      "description": "TODO: Replaced by MicroG GmsCore, test it on runtime",
       "remove": true
     }
   ],
@@ -414,8 +414,8 @@
     },
     {
       "path": "system/app/SimAppDialog",
-      "description": "TODO: SIM Toolkit popup dialog — causes spam popups",
-      "remove": false
+      "description": "SIM Toolkit popup dialog — causes spam popups",
+      "remove": true
     },
     {
       "path": "system/app/NfcNci",
@@ -469,8 +469,8 @@
     },
     {
       "path": "system/priv-app/Stk1",
-      "description": "TODO: SIM Toolkit — responsible for carrier spam popups",
-      "remove": false
+      "description": "SIM Toolkit — responsible for carrier spam popups",
+      "remove": true
     },
     {
       "path": "system/priv-app/TagGoogle",
@@ -571,13 +571,13 @@
     },
     {
       "path": "priv-app/GsmSimProcessor",
-      "description": "TODO: Carrier SIM data processor — safe to remove if not using carrier-specific services",
+      "description": "Carrier SIM data processor — safe to remove if not using carrier-specific services",
       "remove": false
     },
     {
       "path": "priv-app/GoogleServicesFramework",
-      "description": "TODO: Replaced by MicroG GoogleServicesFramework, test it on runtime",
-      "remove": true
+      "description": "WARNING: Remove only when MicroG GSF replacement is confirmed working",
+      "remove": false
     },
     {
       "path": "priv-app/QuickAccessWallet",
@@ -587,7 +587,7 @@
     {
       "path": "priv-app/SetupWizard",
       "description": "Already handled via SetupWizzard entry — confirm folder name spelling",
-      "remove": true
+      "remove": false
     },
     {
       "path": "priv-app/daxService",

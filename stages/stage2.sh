@@ -49,9 +49,9 @@ echo " "
 ./scripts/remove_bloatware/main.sh $MNT_BASE
 ./scripts/modify_configs/configs.sh $MNT_BASE
 ./scripts/modify_configs/props.sh $MNT_BASE
-./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
+# ./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
 ./scripts/brightness_fix/brightness_fix.sh $MNT_BASE
-./scripts/microg/microg.sh $MNT_BASE
+# ./scripts/microg/microg.sh $MNT_BASE
 
 echo "All images unmounted"
 sudo umount ${MNT_BASE}/*
