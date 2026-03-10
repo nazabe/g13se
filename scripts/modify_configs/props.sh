@@ -101,15 +101,20 @@ ADD_PROP_LIST=(
     "persist.wm.debug.predictive_back=1"         # Activation force in WM
 
     # ── Lockscreen ───────────────────────────────────────────────
-    "persist.sys.keyguard.clock_face=digital_clock"  # Modern clock style
-    "ro.lockscreen.widgets.enabled=true"             # Enable widgets on lockscreen
+    # "persist.sys.keyguard.clock_face=digital_clock"  # Modern clock style
+    # "ro.lockscreen.widgets.enabled=true"             # Enable widgets on lockscreen
 
     # ── Fuentes y UI ─────────────────────────────────────────────
     "persist.sys.ui.hw=true"                     # Hardware acceleration throughout the UI
     "ro.config.ringtone_haptics=1"               # Haptics on notifications
 
     # ── Media player en notificaciones ──────────────────────────
-    "persist.sys.media_controls_lockscreen=true" # New media player on lockscreen
+    # "persist.sys.media_controls_lockscreen=true" # New media player on lockscreen
+
+    persist.sys.force_enable_compat_fake_focus=1
+    persist.sys.navbar.height=0
+    persist.wm.extensions.enabled=true
+    android.window.extensions.version=3
 )
 
 # Props that ALREADY EXIST in stock build.prop — must use edit_prop to avoid duplicates
@@ -144,6 +149,8 @@ EDIT_PROP_LIST=(
     "debug.sf.set_idle_timer_ms=0"
 
     "ro.surface_flinger.enable_frame_rate_override=true"  # Allows you to disable FPS per application
+
+    "qemu.hw.mainkeys=0"
 )
 
 append_prop() {

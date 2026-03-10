@@ -1,0 +1,15 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: NavBarOverlay.apk
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '0x61'
+sdkInfo:
+  minSdkVersion: '34'
+  targetSdkVersion: '34'
+sharedLibrary: false
+sparseResources: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0-dirty

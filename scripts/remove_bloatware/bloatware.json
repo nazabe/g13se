@@ -52,8 +52,8 @@
     },
     {
       "path": "priv-app/AndroidSystemIntelligence",
-      "description": "An app that enables smart and personalized features on your Android phone using machine learning and Private Compute Core",
-      "remove": true
+      "description": "TODO: It fix theme color picker on Wallpaper? An app that enables smart and personalized features on your Android phone using machine learning and Private Compute Core",
+      "remove": false
     },
     {
       "path": "priv-app/AndroidSettingsIntelligence",
@@ -146,20 +146,36 @@
       "remove": true
     },
     {
+      "path": "priv-app/GoogleOneTimeInitializer",
+      "description": "Google one-time device setup initializer — safe to remove post-setup",
+      "remove": true
+    },
+    {
       "path": "app/com.google.android.modulemetadata",
       "description": "",
       "remove": false
     },
+
+
+
     {
-      "path": "app/com.google.android.apps.messaging",
-      "description": "NOTE: Google Messages SMS app - Now use QKSMS instead",
+      "path": "priv-app/PhoneSky",
+      "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
       "remove": false
     },
     {
-      "path": "app/GoogleMessages",
-      "description": "NOTE: Google Messages SMS app - Now use QKSMS instead",
+      "path": "priv-app/GsmCore",
+      "description": "WARNING: GSM stack, NOT Google Play Services. Do NOT remove — handles calls and mobile data",
       "remove": false
     },
+    {
+      "path": "app/MtkWallpaperPicker",
+      "description": "MTK basic picker",
+      "remove": false
+    },
+
+
+
     {
       "path": "app/CalendarGoogle",
       "description": "Google Calendar app",
@@ -216,26 +232,6 @@
       "remove": true
     },
     {
-      "path": "priv-app/PhoneSky",
-      "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
-      "remove": false
-    },
-    {
-      "path": "priv-app/GsmCore",
-      "description": "WARNING: GSM stack, NOT Google Play Services. Do NOT remove — handles calls and mobile data",
-      "remove": false
-    },
-    {
-      "path": "priv-app/GoogleOneTimeInitializer",
-      "description": "Google one-time device setup initializer — safe to remove post-setup",
-      "remove": true
-    },
-    {
-      "path": "app/MtkWallpaperPicker",
-      "description": "MTK basic wallpaper picker",
-      "remove": true
-    },
-    {
       "path": "priv-app/SearchSelector",
       "description": "Google default search engine selector",
       "remove": true
@@ -243,6 +239,21 @@
     {
       "path": "app/MDIP",
       "description": "Motorola Device Intelligence Platform - Telemetry",
+      "remove": true
+    },
+    {
+      "path": "app/LatinImeGoogle",
+      "description": "TODO: Gboard — Replace with custom keyboard app",
+      "remove": true
+    },
+    {
+      "path": "overlay/CellbroadcastGoogleUIResOverlay",
+      "description": "Overlay UI de alertas de emergencia inalámbricas",
+      "remove": true
+    },
+    {
+      "path": "overlay/CellbroadcastServiceResOverlay", 
+      "description": "Overlay de servicio de alertas de emergencia inalámbricas",
       "remove": true
     }
   ],
@@ -265,7 +276,7 @@
     {
       "path": "system/app/WallpaperBackup",
       "description": "",
-      "remove": true
+      "remove": false
     },
     {
       "path": "system/app/BasicDreams",
@@ -285,7 +296,7 @@
     {
       "path": "system/priv-app/LiveWallpapersPicker",
       "description": "",
-      "remove": true
+      "remove": false
     },
     {
       "path": "system/priv-app/LenovoID",
@@ -397,6 +408,17 @@
       "description": "",
       "remove": true
     },
+
+
+
+    {
+      "path": "system/priv-app/Wallpaper",
+      "description": "Stock app",
+      "remove": false
+    },
+
+
+    
     {
       "path": "system/app/EasterEgg",
       "description": "Android Easter Egg — pure bloatware",
@@ -458,11 +480,6 @@
       "remove": true
     },
     {
-      "path": "system/priv-app/Wallpaper",
-      "description": "Stock wallpaper app",
-      "remove": true
-    },
-    {
       "path": "system/priv-app/SoundPicker",
       "description": "Stock ringtone picker",
       "remove": true
@@ -480,11 +497,21 @@
     {
       "path": "system/priv-app/ThemeStub",
       "description": "Empty theme stub — no real functionality",
-      "remove": true
+      "remove": false
     },
     {
       "path": "system/priv-app/ShutdownAfterScreenOff10MinutesService",
       "description": "Retail/demo mode service — shuts down device after 10min screen off",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/Messages",
+      "description": "Google Messages — reemplazado por QKSMS",
+      "remove": true
+    },
+    {
+      "path": "system/etc/permissions/privapp-permissions-com.google.android.apps.messaging.xml",
+      "description": "Permisos de Google Messages — huérfano tras remover Messages",
       "remove": true
     }
   ],
@@ -512,7 +539,7 @@
     {
       "path": "priv-app/MotoLiveWallpaper3",
       "description": "",
-      "remove": true
+      "remove": false
     },
     {
       "path": "priv-app/MotoCare",
@@ -549,6 +576,36 @@
       "description": "",
       "remove": true
     },
+
+
+
+    {
+      "path": "priv-app/GsmSimProcessor",
+      "description": "Carrier SIM data processor — safe to remove if not using carrier-specific services",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GoogleServicesFramework",
+      "description": "WARNING: Remove only when MicroG GSF replacement is confirmed working",
+      "remove": false
+    },
+    {
+      "path": "priv-app/WallpaperCropper",
+      "description": "Cropper — unnecessary without MtkPicker",
+      "remove": false
+    },
+
+
+
+    {
+      "path": "priv-app/SetupWizard",
+      "description": "NOTE: For some reason, if removed, cause UI problems. I've tested this, and yes, SetupWizard fix it.",
+      "remove": false
+    },
+
+
+
+
     {
       "path": "priv-app/DolbySound",
       "description": "Dolby Atmos — my benchmarks confirm it degrades audio quality",
@@ -570,24 +627,9 @@
       "remove": true
     },
     {
-      "path": "priv-app/GsmSimProcessor",
-      "description": "Carrier SIM data processor — safe to remove if not using carrier-specific services",
-      "remove": false
-    },
-    {
-      "path": "priv-app/GoogleServicesFramework",
-      "description": "WARNING: Remove only when MicroG GSF replacement is confirmed working",
-      "remove": false
-    },
-    {
       "path": "priv-app/QuickAccessWallet",
       "description": "Google Pay quick access on lockscreen",
       "remove": true
-    },
-    {
-      "path": "priv-app/SetupWizard",
-      "description": "Already handled via SetupWizzard entry — confirm folder name spelling",
-      "remove": false
     },
     {
       "path": "priv-app/daxService",
@@ -602,11 +644,6 @@
     {
       "path": "app/BatteryWarning",
       "description": "MTK battery warning — Android handles this natively",
-      "remove": true
-    },
-    {
-      "path": "priv-app/WallpaperCropper",
-      "description": "Wallpaper cropper — unnecessary without MtkWallpaperPicker",
       "remove": true
     },
     {
@@ -633,23 +670,6 @@
       "path": "app/MiraVision",
       "description": "MTK display enhancement engine — similar to Dolby Vision for display",
       "remove": true
-    }
-  ],
-  "system_a_apex": [
-    {
-      "path": "system/apex/com.android.nfcservices",
-      "description": "NFC APEX — device has no NFC hardware. APEX handling not yet implemented.",
-      "remove": false
-    },
-    {
-      "path": "system/apex/EasterEgg",
-      "description": "Android Easter Egg APEX. APEX handling not yet implemented.",
-      "remove": false
-    },
-    {
-      "path": "system/apex/SimAppDialog",
-      "description": "SIM Toolkit APEX. APEX handling not yet implemented.",
-      "remove": false
     }
   ]
 }

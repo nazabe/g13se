@@ -14,3 +14,13 @@ vbmeta_system.img
 vbmeta_vendor.img
 enum
 kaeru-UHA34.29-20.img
+/services_smali/*
+build/
+dexpatcher-1.8.0-beta1.jar
+generated_dex/
+haruka_34.dex
+haruka_core.dex
+patch_services.sh
+scripts/install_apks/apps/Magisk-v30.7.apk
+scripts/install_apks/apps/OpenBoard-v1.4.5.apk
+services.jar

@@ -49,8 +49,14 @@ echo " "
 ./scripts/remove_bloatware/main.sh $MNT_BASE
 ./scripts/modify_configs/configs.sh $MNT_BASE
 ./scripts/modify_configs/props.sh $MNT_BASE
+./scripts/install_apks/install_apks.sh $MNT_BASE
+
+# NOTE: Nothing of this modules works...
+# ./scripts/nav_overlay/nav_overlay.sh $MNT_BASE
+# ./scripts/fonts/fonts.sh $MNT_BASE 
+# ./scripts/brightness_fix/brightness_fix.sh $MNT_BASE
+
 # ./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
-./scripts/brightness_fix/brightness_fix.sh $MNT_BASE
 # ./scripts/microg/microg.sh $MNT_BASE
 
 echo "All images unmounted"

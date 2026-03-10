@@ -14,6 +14,8 @@ echo "Custom G13SE ROM Builder based on Stock"
 SUPER_DIR=$(dirname "$SUPER_IMAGE")
 SUPER_RAW="$SUPER_DIR/super_raw.img"
 
+sudo umount unpacked/mnt/system_a unpacked/mnt/product_a unpacked/mnt/system_ext_a
+
 if [ -d "$UNPACKED_DIR" ]; then
     echo "[🗑️] Removing old unpacked directory..."
     rm -rf "$UNPACKED_DIR"
