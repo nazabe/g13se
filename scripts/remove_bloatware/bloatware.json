@@ -175,6 +175,29 @@
     },
 
 
+    
+    {
+      "path": "priv-app/CrossDeviceServices",
+      "description": "TODO: Test",
+      "remove": false
+    },
+    {
+      "path": "priv-app/CarrierSettings",
+      "description": "TODO: Test",
+      "remove": false
+    },
+    {
+      "path": "priv-app/ConfigUpdater",
+      "description": "TODO: Test",
+      "remove": false
+    },
+    {
+      "path": "app/TrichromeLibrary",
+      "description": "TODO: Test",
+      "remove": false
+    },
+
+
 
     {
       "path": "app/CalendarGoogle",
@@ -599,10 +622,37 @@
 
     {
       "path": "priv-app/SetupWizard",
-      "description": "NOTE: For some reason, if removed, cause UI problems. I've tested this, and yes, SetupWizard fix it.",
+      "description": "TODO: If removed, cause UI problems. Find the way of remove it",
       "remove": false
     },
 
+
+
+    {
+      "path": "priv-app/DeviceManagement",
+      "description": "TODO: Test",
+      "remove": false
+    },
+    {
+      "path": "priv-app/LPPeService",
+      "description": "TODO: Test",
+      "remove": false
+    },
+    {
+      "path": "priv-app/ModemStatsService",
+      "description": "TODO: Test",
+      "remove": false
+    },
+    {
+      "path": "app/MtkCapCtrl",
+      "description": "I guess is the media volume button",
+      "remove": false
+    },
+    {
+      "path": "app/MtkGbaService",
+      "description": "TODO: Test",
+      "remove": false
+    },
 
 
 

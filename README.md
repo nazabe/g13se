@@ -9,7 +9,7 @@ Custom firmware A14 based on stock without bloatware for penangf Moto G13SE & co
 - Pre-installed lightweight open-source alternative apps:
   - **OpenBoard** — replaces Gboard
   - **QKSMS** — replaces Google Messages
-- Optimized build.prop for Helio G85 with 4GB RAM:
+- Optimized build.prop for MediaTek Helio G85 with 4GB RAM:
   - Fixed 90Hz refresh rate
   - Optimized Dalvik heap configuration
   - LMKD in PSI mode
@@ -19,13 +19,20 @@ Custom firmware A14 based on stock without bloatware for penangf Moto G13SE & co
 - **Native Signature Spoofing** — direct patch on `framework.jar` for full MicroG support without root
 - **MicroG** — Google Play Services replacement (~150MB RAM savings estimated)
 
-### 📋 Pending
+### 📋 To-Do´s
 - Install and test Magisk modules:
-  - Encore Tweaks — Helio G85 governor optimization
+  - Encore Tweaks — MediaTek Helio G85 governor optimization
   - LMKD PSI RAM — advanced memory management
-- ReVanced + MicroG once signature spoofing is working
+- YouTube ReVanced + MicroG once signature spoofing is working
 - RRO overlays for additional UI customization
 - Replace Android SystemWebView with alternative
+- Benchmark PerfMTK Magisk Module
+
+### 🔒 Kept apps
+- **Moto Camera** — Required for Macro and 50MP binding (unavailable in GCam)
+- **Google Calculator** — No telemetry, best option available
+- **Google Clock** — Native, fully system-integrated
+- **Digital Wellbeing** — Kept for its widget
 
 ## Estimated resource savings vs Stock
 | Replacement | RAM saved |

@@ -39,54 +39,26 @@ for package in "${BLOATWARE[@]}"; do
     fi
 done
 
-# APEX packages — cannot be deleted, replaced with empty stub instead
-# APEX_BLOATWARE+=($(jq -r '.system_a_apex[] | select(.remove == true) | "system_a/\(.path)"' "$CONFIG"))
-
-# if [ ${#APEX_BLOATWARE[@]} -gt 0 ]; then
-#     echo ""
-#     echo "[⚙️] Processing APEX packages..."
-#     for apex_path in "${APEX_BLOATWARE[@]}"; do
-#         TARGET="${BASE_DIR}/${apex_path}"
-#         # APEX packages can appear as a directory or as a .apex file
-#         if [ -d "$TARGET" ]; then
-#             echo "[-] Stubbing APEX directory: ${TARGET}"
-#             sudo rm -rf "$TARGET"
-#             sudo mkdir -p "$TARGET"
-#         elif [ -f "${TARGET}.apex" ]; then
-#             echo "[-] Stubbing APEX file: ${TARGET}.apex"
-#             sudo truncate -s 0 "${TARGET}.apex"
-#         elif [ -f "${TARGET}" ]; then
-#             echo "[-] Stubbing APEX file: ${TARGET}"
-#             sudo truncate -s 0 "${TARGET}"
-#         else
-#             echo "[?] APEX not found (skipping): ${TARGET}"
-#         fi
-#     done
-# fi
-
 # NOTE: This is the list of all the apps on the device
 
-# ls unpacked/mnt/product_a/app 
-# CalculatorGoogle  com.google.android.modulemetadata  DeskClockGoogle  LatinImeGoogle  NonFrameworkLbs  TrichromeLibrary  WebViewGoogle
+# ls unpacked/mnt/product_a/app/ && ls unpacked/mnt/product_a/priv-app/
 
-# ls unpacked/mnt/product_a/priv-app
+# CalculatorGoogle  com.google.android.modulemetadata  DeskClockGoogle  Magisk-v30.7  NonFrameworkLbs  OpenBoard-v1.4.5  QKSMS-v3.10.1  TrichromeLibrary  WebViewGoogle
 # CarrierSettings  ConfigUpdater  CrossDeviceServices  GmsCore  GoogleCarrierWifi  GoogleDialer  ImsServiceEntitlement  Phonesky  SettingsIntelligence  Wellbeing
 
-# ls unpacked/mnt/system_a/system/app
+# ls unpacked/mnt/system_a/system/app/ && ls unpacked/mnt/system_a/system/priv-app/
+
 # BluetoothMidiService   CaptivePortalLoginGoogle  CertInstaller    HTMLViewer  MtkPrivacyPolicy  PrintSpooler
 # CameraExtensionsProxy  CarrierDefaultApp         GoogleExtShared  KeyChain    PacProcessor      SecureElement
+# BackupRestoreConfirmation  DownloadProvider                  InputDevices         MotorolaSettingsProviderExternalPrebuilt  MtkTelephonyProvider  Shell
+# BlockedNumberProvider      DownloadProviderUi                IntentResolver       MtkCalendarProvider                       MtkTeleService        ThemeStub
+# BuiltInPrintService        DynamicSystemInstallationService  LocalTransport       MtkContactsProvider                       MtpService            UserDictionaryProvider
+# CallLogBackup              ExternalStorageProvider           MediaProviderLegacy  MtkMmsService                             NetworkStackGoogle    VpnDialogs
+# CredentialManager          FusedLocation                     MotoCamera           MtkPowerTouch                             ProxyHandler          Wallpaper
+# DocumentsUIGoogle          GooglePackageInstaller            MotoLauncher         MtkTelecom                                SharedStorageBackup
 
-# ls unpacked/mnt/system_a/system/priv-app
-# BackupRestoreConfirmation  DownloadProvider                  InputDevices         MotoLauncher                              MtkTelecom            SharedStorageBackup
-# BlockedNumberProvider      DownloadProviderUi                IntentResolver       MotorolaSettingsProviderExternalPrebuilt  MtkTelephonyProvider  Shell
-# BuiltInPrintService        DynamicSystemInstallationService  LocalTransport       MtkCalendarProvider                       MtkTeleService        UserDictionaryProvider
-# CallLogBackup              ExternalStorageProvider           MediaProviderLegacy  MtkContactsProvider                       MtpService            VpnDialogs
-# CredentialManager          FusedLocation                     Messages             MtkMmsService                             NetworkStackGoogle
-# DocumentsUIGoogle          GooglePackageInstaller            MotoCamera           MtkPowerTouch                             ProxyHandler
+# ls unpacked/mnt/system_ext_a/app/ && ls unpacked/mnt/system_ext_a/priv-app/
 
-# ls unpacked/mnt/system_ext_a/app
 # mediatek-res  TeeService
-
-# ls unpacked/mnt/system_ext_a/priv-app
-# CarrierConfig     GmsSimProcessor          ImsService   ModemStatsService  MtkGbaService  MtkSettingsProvider  MtkTelephonyAssist
-# DeviceManagement  GoogleServicesFramework  LPPeService  MtkCapCtrl         MtkSettings    MtkSystemUI          StorageManager
+# CarrierConfig     GmsSimProcessor          ImsService   ModemStatsService  MtkGbaService  MtkSettingsProvider  MtkTelephonyAssist  StorageManager
+# DeviceManagement  GoogleServicesFramework  LPPeService  MtkCapCtrl         MtkSettings    MtkSystemUI          SetupWizard         WallpaperCropper
