@@ -52,8 +52,8 @@
     },
     {
       "path": "priv-app/AndroidSystemIntelligence",
-      "description": "TODO: It fix theme color picker on Wallpaper? An app that enables smart and personalized features on your Android phone using machine learning and Private Compute Core",
-      "remove": false
+      "description": "An app that enables smart and personalized features on your Android phone using machine learning and Private Compute Core",
+      "remove": true
     },
     {
       "path": "priv-app/AndroidSettingsIntelligence",
@@ -150,14 +150,14 @@
       "description": "Google one-time device setup initializer — safe to remove post-setup",
       "remove": true
     },
+    
+    
+    
     {
       "path": "app/com.google.android.modulemetadata",
-      "description": "",
+      "description": "NOTE: If removed, cause bootloop",
       "remove": false
     },
-
-
-
     {
       "path": "priv-app/PhoneSky",
       "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
@@ -171,7 +171,7 @@
     {
       "path": "app/MtkWallpaperPicker",
       "description": "MTK basic picker",
-      "remove": false
+      "remove": true
     },
 
 
@@ -243,7 +243,7 @@
     },
     {
       "path": "app/LatinImeGoogle",
-      "description": "TODO: Gboard — Replace with custom keyboard app",
+      "description": "Gboard — Replaced with OpenBoard",
       "remove": true
     },
     {
@@ -276,7 +276,7 @@
     {
       "path": "system/app/WallpaperBackup",
       "description": "",
-      "remove": false
+      "remove": true
     },
     {
       "path": "system/app/BasicDreams",
@@ -296,7 +296,7 @@
     {
       "path": "system/priv-app/LiveWallpapersPicker",
       "description": "",
-      "remove": false
+      "remove": true
     },
     {
       "path": "system/priv-app/LenovoID",
@@ -506,7 +506,7 @@
     },
     {
       "path": "system/priv-app/Messages",
-      "description": "Google Messages — reemplazado por QKSMS",
+      "description": "Google Messages — replaced with QKSMS",
       "remove": true
     },
     {
@@ -539,7 +539,7 @@
     {
       "path": "priv-app/MotoLiveWallpaper3",
       "description": "",
-      "remove": false
+      "remove": true
     },
     {
       "path": "priv-app/MotoCare",
