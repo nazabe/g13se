@@ -24,3 +24,4 @@ patch_services.sh
 scripts/install_apks/apps/Magisk-v30.7.apk
 scripts/install_apks/apps/OpenBoard-v1.4.5.apk
 services.jar
+/framework_smali/*
