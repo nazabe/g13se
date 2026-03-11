@@ -16,17 +16,17 @@ Custom firmware A14 based on stock without bloatware for penangf Moto G13SE & co
   - Optimized network buffers
 
 ### 🔄 In progress
-- **Native Signature Spoofing** — direct patch on `framework.jar` for full MicroG support without root
+- **Native Signature Spoofing** — direct patch on `services.jar` for full MicroG support without root
 - **MicroG** — Google Play Services replacement (~150MB RAM savings estimated)
 
 ### 📋 To-Do´s
 - Install and test Magisk modules:
   - Encore Tweaks — MediaTek Helio G85 governor optimization
-  - LMKD PSI RAM — advanced memory management
+  - LMKD PSI RAM — Advanced memory management
+  - PerfMTK — Optimize performance and power efficiency
 - YouTube ReVanced + MicroG once signature spoofing is working
 - RRO overlays for additional UI customization
 - Replace Android SystemWebView with alternative
-- Benchmark PerfMTK Magisk Module
 
 ### 🔒 Kept apps
 - **Moto Camera** — Required for Macro and 50MP binding (unavailable in GCam)

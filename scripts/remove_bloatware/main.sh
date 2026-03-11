@@ -32,7 +32,7 @@ BLOATWARE+=($(jq -r '.system_ext_a[] | select(.remove == true) | "system_ext_a/\
 for package in "${BLOATWARE[@]}"; do
     TARGET="${BASE_DIR}/${package}"
     if [ -e "$TARGET" ]; then
-        echo "[-] ${TARGET}"
+        # echo "[-] ${TARGET}"
         sudo rm -rf "$TARGET"
     else
         echo "[?] Not found (skipping): ${TARGET}"

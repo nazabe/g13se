@@ -57,7 +57,7 @@ echo " "
 # ./scripts/fonts/fonts.sh $MNT_BASE 
 # ./scripts/brightness_fix/brightness_fix.sh $MNT_BASE
 
-# ./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
+./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
 # ./scripts/microg/microg.sh $MNT_BASE
 
 echo "All images unmounted"

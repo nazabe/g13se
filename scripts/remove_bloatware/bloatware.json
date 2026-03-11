@@ -161,7 +161,7 @@
     {
       "path": "priv-app/PhoneSky",
       "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
-      "remove": false
+      "remove": true
     },
     {
       "path": "priv-app/GsmCore",
@@ -179,7 +179,7 @@
     {
       "path": "priv-app/CrossDeviceServices",
       "description": "TODO: Test",
-      "remove": false
+      "remove": true
     },
     {
       "path": "priv-app/CarrierSettings",
@@ -189,7 +189,7 @@
     {
       "path": "priv-app/ConfigUpdater",
       "description": "TODO: Test",
-      "remove": false
+      "remove": true
     },
     {
       "path": "app/TrichromeLibrary",

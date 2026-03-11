@@ -151,6 +151,8 @@ EDIT_PROP_LIST=(
     "ro.surface_flinger.enable_frame_rate_override=true"  # Allows you to disable FPS per application
 
     "qemu.hw.mainkeys=0"
+
+    "ro.setupwizard.mode=DISABLED"
 )
 
 append_prop() {
