@@ -161,7 +161,7 @@
     {
       "path": "priv-app/PhoneSky",
       "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
-      "remove": true
+      "remove": false
     },
     {
       "path": "priv-app/GsmCore",

@@ -58,7 +58,7 @@ echo " "
 # ./scripts/brightness_fix/brightness_fix.sh $MNT_BASE
 
 ./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
-# ./scripts/microg/microg.sh $MNT_BASE
+./scripts/microg/microg.sh $MNT_BASE
 
 echo "All images unmounted"
 sudo umount ${MNT_BASE}/*
