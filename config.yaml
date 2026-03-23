@@ -1,0 +1,40 @@
+config_version: 1.4
+dynamic_swappiness:
+  enable: true
+  threshold_type: "psi"
+  swappiness_range:
+    max: 100  # Reduced — 140 is aggressive to eMMC, degrades lifespan
+    min: 60   # Higher than the default — with 4GB of RAM it's advisable to compress beforehand
+  threshold_psi:
+    mode: "auto"
+    levels: 6
+    auto_cpu:
+      max: 60   # More sensitive — the MediaTek Helio G85 doesn't have much CPU headroom
+      min: 0
+      time_window: "avg10"  # More responsive than avg60 for gaming/active use
+    auto_memory:
+      max: 15   # More aggressive — with 4GB of RAM you have to react sooner
+      min: 0
+      time_window: "avg10"
+    auto_io:
+      max: 20   # eMMC is slow, reacting earlier to I/O pressure
+      min: 0
+      time_window: "avg10"
+    cpu_pressure: [[5, 90], [10, 80], [20, 70], [60, 60], [100, 60]]
+    memory_pressure: [[3, 100], [8, 90], [12, 80], [18, 60], [22, 60]]
+    # More aggressive in memory — reacts faster with 4GB of RAM
+    io_pressure: [[8, 90], [12, 80], [20, 70], [25, 60]]
+  threshold_mem_pressure: [[65, 100], [55, 80], [45, 60]]
+  # Activate swap beforehand — with 4GB of RAM you can't wait until you're at 40%.
+
+virtual_memory:
+  enable: true
+  pressure_binding: false
+  deactivate_in_sleep: true
+  wait_timeout: 300  # 5 min instead of 10 — releases ZRAM faster while sleeping
+  zram:
+    activation_threshold: 70   # Activate ZRAM earlier (stock was 80)
+    deactivation_threshold: 40 # Lower — keep ZRAM active longer
+  swap:
+    activation_threshold: 80   # Before the 90 default
+    deactivation_threshold: 30

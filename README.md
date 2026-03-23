@@ -29,7 +29,7 @@ Custom firmware A14 based on stock without bloatware for penangf Moto G13SE & co
 - Replace Android SystemWebView with alternative
 
 ### 🔒 Kept apps
-- **Moto Camera** — Required for Macro and 50MP binding (unavailable in GCam)
+- **Moto Camera** — Required for Macro, 50MP binding & PRO MODE (unavailable in GCam)
 - **Google Calculator** — No telemetry, best option available
 - **Google Clock** — Native, fully system-integrated
 - **Digital Wellbeing** — Kept for its widget

@@ -9,6 +9,8 @@ fi
 BASE_DIR=$1
 SCRIPT_DIR=$(dirname "$(realpath "${BASH_SOURCE[0]}")")
 
+# TODO: Replace org.spoofing.apk for .xml to save 8mb of RAM
+
 FRAMEWORK_DIR="${BASE_DIR}/system_a/system/framework"
 DEX_DIR="${BASE_DIR}/system_a/system/framework/oat/arm64"
 

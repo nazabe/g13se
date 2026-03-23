@@ -111,10 +111,10 @@ ADD_PROP_LIST=(
     # ── Media player en notificaciones ──────────────────────────
     # "persist.sys.media_controls_lockscreen=true" # New media player on lockscreen
 
-    persist.sys.force_enable_compat_fake_focus=1
-    persist.sys.navbar.height=0
-    persist.wm.extensions.enabled=true
-    android.window.extensions.version=3
+    # persist.sys.force_enable_compat_fake_focus=1
+    # persist.sys.navbar.height=0
+    # persist.wm.extensions.enabled=true
+    # android.window.extensions.version=3
 )
 
 # Props that ALREADY EXIST in stock build.prop — must use edit_prop to avoid duplicates

@@ -32,7 +32,7 @@ BLOATWARE+=($(jq -r '.system_ext_a[] | select(.remove == true) | "system_ext_a/\
 for package in "${BLOATWARE[@]}"; do
     TARGET="${BASE_DIR}/${package}"
     if [ -e "$TARGET" ]; then
-        # echo "[-] ${TARGET}"
+        echo "[-] ${TARGET}"
         sudo rm -rf "$TARGET"
     else
         echo "[?] Not found (skipping): ${TARGET}"
@@ -41,24 +41,24 @@ done
 
 # NOTE: This is the list of all the apps on the device
 
-# ls unpacked/mnt/product_a/app/ && ls unpacked/mnt/product_a/priv-app/
+# penangf:/ $ ls product/app/ && ls product/priv-app/                                                                                                                                       
 
-# CalculatorGoogle  com.google.android.modulemetadata  DeskClockGoogle  Magisk-v30.7  NonFrameworkLbs  OpenBoard-v1.4.5  QKSMS-v3.10.1  TrichromeLibrary  WebViewGoogle
-# CarrierSettings  ConfigUpdater  CrossDeviceServices  GmsCore  GoogleCarrierWifi  GoogleDialer  ImsServiceEntitlement  Phonesky  SettingsIntelligence  Wellbeing
+# CalculatorGoogle  DeskClockGoogle  Magisk-v30.7  NonFrameworkLbs  OpenBoard-v1.4.5  QUIK-v4.3.4  TrichromeLibrary  WebViewGoogle  com.google.android.modulemetadata
+# CarrierSettings  CrossDeviceServices  GmsCore  GoogleCarrierWifi  GoogleDialer  ImsServiceEntitlement  Phonesky  SettingsIntelligence  Wellbeing
 
-# ls unpacked/mnt/system_a/system/app/ && ls unpacked/mnt/system_a/system/priv-app/
+# penangf:/ $ ls system/app/ && ls system/priv-app/                                                                                                                                         
 
 # BluetoothMidiService   CaptivePortalLoginGoogle  CertInstaller    HTMLViewer  MtkPrivacyPolicy  PrintSpooler
 # CameraExtensionsProxy  CarrierDefaultApp         GoogleExtShared  KeyChain    PacProcessor      SecureElement
-# BackupRestoreConfirmation  DownloadProvider                  InputDevices         MotorolaSettingsProviderExternalPrebuilt  MtkTelephonyProvider  Shell
-# BlockedNumberProvider      DownloadProviderUi                IntentResolver       MtkCalendarProvider                       MtkTeleService        ThemeStub
+# BackupRestoreConfirmation  DownloadProvider                  InputDevices         MotorolaSettingsProviderExternalPrebuilt  MtkTelecom            Shell
+# BlockedNumberProvider      DownloadProviderUi                IntentResolver       MtkCalendarProvider                       MtkTelephonyProvider  ThemeStub
 # BuiltInPrintService        DynamicSystemInstallationService  LocalTransport       MtkContactsProvider                       MtpService            UserDictionaryProvider
 # CallLogBackup              ExternalStorageProvider           MediaProviderLegacy  MtkMmsService                             NetworkStackGoogle    VpnDialogs
 # CredentialManager          FusedLocation                     MotoCamera           MtkPowerTouch                             ProxyHandler          Wallpaper
-# DocumentsUIGoogle          GooglePackageInstaller            MotoLauncher         MtkTelecom                                SharedStorageBackup
+# DocumentsUIGoogle          GooglePackageInstaller            MotoLauncher         MtkTeleService                            SharedStorageBackup
 
-# ls unpacked/mnt/system_ext_a/app/ && ls unpacked/mnt/system_ext_a/priv-app/
+# penangf:/ $ ls system_ext/app && ls system_ext/priv-app/                                                                                                                                  
 
-# mediatek-res  TeeService
+# TeeService  mediatek-res
 # CarrierConfig     GmsSimProcessor          ImsService   ModemStatsService  MtkGbaService  MtkSettingsProvider  MtkTelephonyAssist  StorageManager
 # DeviceManagement  GoogleServicesFramework  LPPeService  MtkCapCtrl         MtkSettings    MtkSystemUI          SetupWizard         WallpaperCropper

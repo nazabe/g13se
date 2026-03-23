@@ -56,16 +56,6 @@
       "remove": true
     },
     {
-      "path": "priv-app/AndroidSettingsIntelligence",
-      "description": "If you remove it, you will lose the search in the settings",
-      "remove": false
-    },
-    {
-      "path": "priv-app/SettingsIntelligence",
-      "description": "If you remove it, you will lose the search in the settings",
-      "remove": false
-    },
-    {
       "path": "priv-app/GoogleRestore",
       "description": "",
       "remove": true
@@ -150,55 +140,16 @@
       "description": "Google one-time device setup initializer — safe to remove post-setup",
       "remove": true
     },
-    
-    
-    
-    {
-      "path": "app/com.google.android.modulemetadata",
-      "description": "NOTE: If removed, cause bootloop",
-      "remove": false
-    },
-    {
-      "path": "priv-app/PhoneSky",
-      "description": "TODO: Google Play Store — remove when switching to F-Droid + MicroG",
-      "remove": false
-    },
-    {
-      "path": "priv-app/GsmCore",
-      "description": "WARNING: GSM stack, NOT Google Play Services. Do NOT remove — handles calls and mobile data",
-      "remove": false
-    },
     {
       "path": "app/MtkWallpaperPicker",
       "description": "MTK basic picker",
       "remove": true
     },
-
-
-    
-    {
-      "path": "priv-app/CrossDeviceServices",
-      "description": "TODO: Test",
-      "remove": true
-    },
-    {
-      "path": "priv-app/CarrierSettings",
-      "description": "TODO: Test",
-      "remove": false
-    },
     {
       "path": "priv-app/ConfigUpdater",
-      "description": "TODO: Test",
+      "description": "",
       "remove": true
     },
-    {
-      "path": "app/TrichromeLibrary",
-      "description": "TODO: Test",
-      "remove": false
-    },
-
-
-
     {
       "path": "app/CalendarGoogle",
       "description": "Google Calendar app",
@@ -236,7 +187,7 @@
     },
     {
       "path": "priv-app/FilesGoogle",
-      "description": "Google Files app — replace with Material Files",
+      "description": "Google Files app",
       "remove": true
     },
     {
@@ -266,21 +217,311 @@
     },
     {
       "path": "app/LatinImeGoogle",
-      "description": "Gboard — Replaced with OpenBoard",
+      "description": "TODO: Gboard — Replaced with OpenBoard, HeliBoard doesn't work by default",
       "remove": true
     },
     {
       "path": "overlay/CellbroadcastGoogleUIResOverlay",
-      "description": "Overlay UI de alertas de emergencia inalámbricas",
+      "description": "Wireless Emergency Alerts UI Overlay",
       "remove": true
     },
     {
       "path": "overlay/CellbroadcastServiceResOverlay", 
-      "description": "Overlay de servicio de alertas de emergencia inalámbricas",
+      "description": "Wireless emergency alert service overlay",
       "remove": true
+    },
+    {
+      "path": "priv-app/CrossDeviceServices",
+      "description": "Just bloatware (tested)",
+      "remove": true
+    },
+    {
+      "path": "priv-app/Wellbeing",
+      "description": "NOTE: Telemetry, https://github.com/nethical6/digipaws",
+      "remove": true
+    },
+
+
+
+    {
+      "path": "etc/permissions/com.motorola.gamemode.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/com.motorola.help.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/com.motorola.software.odm1.game_mode.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/com.motorola.timeweatherwidget.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/com.payjoy.access.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/feature-com.taboola.ody.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/permission_ignite_com.inmobi.installer.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.gamemode.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.help.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.taboola.ody.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-google-comms-suite.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-google-product.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-orange.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/split-permissions-google.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": false
+    },
+
+
+
+    {
+      "path": "etc/default-permissions/default-permission-com.motorola.timeweatherwidget.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/default-permissions/default-permissions-com.motorola.gamemode.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/default-permissions/default-permissions-google.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/default-permissions/pregranted-notification-permission-glance.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/default-permissions/pregranted-notification-permission-motorola.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/default-permissions/pregranted-notification-permission-orange.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+
+
+    {
+      "path": "etc/sysconfig/bugreport-whitelist-com.motorola.help.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/eea_v2_search_chrome.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.gamemode.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.help.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.timeweatherwidget.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/personal_safety.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/shortcut-com.motorola.gamemode.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/sysconfig-orange.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/wellbeing.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/whitelist_com.inmobi.installer.xml",
+      "description": "NOTE: Removing unnused permissions (not tested)",
+      "remove": true
+    },
+
+    
+    
+    {
+      "path": "app/TrichromeLibrary",
+      "description": "TODO: Remove + WebViewGoogle when Cromite installer works",
+      "remove": false
+    },
+    {
+      "path": "app/WebViewGoogle",
+      "description": "TODO: https://github.com/syphyr/android_external_cromite-webview",
+      "remove": false
+    },
+
+
+
+    {
+      "path": "priv-app/Phonesky",
+      "description": "TODO: Google Play Store — remove when switching to MicroG",
+      "remove": false
+    },
+    {
+      "path": "app/NonFrameworkLbs",
+      "description": "TODO: Remove when switching to MicroG",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GmsCore",
+      "description": "TODO: Remove when switching to MicroG",
+      "remove": false
+    },
+
+
+
+    {
+      "path": "app/CalculatorGoogle",
+      "description": "NOTE: No telemetry, personal best (safe to remove)",
+      "remove": false
+    }, 
+    {
+      "path": "app/DeskClockGoogle",
+      "description": "NOTE: Native, fully system-integrated (safe to remove)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/AndroidSettingsIntelligence",
+      "description": "NOTE: If you remove it, you will lose the search in the settings (tested)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/SettingsIntelligence",
+      "description": "NOTE: If you remove it, you will lose the search in the settings (tested)",
+      "remove": false
+    },
+    {
+      "path": "app/com.google.android.modulemetadata",
+      "description": "NOTE: If removed, cause bootloop (tested)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/CarrierSettings",
+      "description": "NOTE: Not remove, manage VoLTE, WiFi-Calling and other things (not tested)",
+      "remove": false
+    },
+    {
+      "path": "app/ImsServiceEntitlement",
+      "description": "NOTE: Not remove, system software for carrier services (VoLTE/VoWiFi/RCS) (not tested)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GoogleCarrierWifi",
+      "description": "NOTE: Manage automatic Wi-Fi connections to save mobile data (not tested)",
+      "remove": false
+    },
+    {
+      "path": "app/GoogleDialer",
+      "description": "NOTE: To access settings like Netstat/LTE only, you'll need to use it (safe to remove, not tested)",
+      "remove": false
     }
   ],
   "system_a": [
+    {
+      "path": "system/priv-app/MotoLauncher",
+      "description": "NOTE: If deleted 'home' gesture stops working. Best Launcher for smoothness & performance (tested)",
+      "remove": false
+    },
+    {
+      "path": "system/priv-app/MotoCamera",
+      "description": "NOTE: Required for Macro, 50px binding & PRO MODE, for anything else use GCAM (safe to remove)",
+      "remove": false
+    },
+    {
+      "path": "system/priv-app/Wallpaper",
+      "description": "NOTE: App to change wallpaper, do not remove (tested)",
+      "remove": false
+    },
+    {
+      "path": "system/priv-app/ThemeStub",
+      "description": "NOTE: Add the functionality of change device color theme when change wallpaper (tested)",
+      "remove": false
+    },
+
+
+
+    {
+      "path": "system/etc/permissions/com.motorola.ccc.ota.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/MtkCalendarProvider",
+      "description": "NOTE: Innecesary app based on test",
+      "remove": true
+    },
+    {
+      "path": "system/app/PrintSpooler",
+      "description": "tested",
+      "remove": true
+    },
+    {
+      "path": "system/app/HTMLViewer",
+      "description": "tested",
+      "remove": true
+    },
     {
       "path": "system/app/CompanionDeviceManager",
       "description": "",
@@ -397,16 +638,6 @@
       "remove": true
     },
     {
-      "path": "system/priv-app/MotoLauncher",
-      "description": "If you delete it, the 'home' gesture stops working for some reason. Best Launcher is stock for smoothness & performance.",
-      "remove": false
-    },
-    {
-      "path": "system/priv-app/MotoCamera",
-      "description": "It aproaches all stock camera features, but GCam can be better sometimes. Test by yourself.",
-      "remove": false
-    },
-    {
       "path": "system/priv-app/ManagedProvisioning",
       "description": "",
       "remove": true
@@ -431,17 +662,6 @@
       "description": "",
       "remove": true
     },
-
-
-
-    {
-      "path": "system/priv-app/Wallpaper",
-      "description": "Stock app",
-      "remove": false
-    },
-
-
-    
     {
       "path": "system/app/EasterEgg",
       "description": "Android Easter Egg — pure bloatware",
@@ -518,27 +738,168 @@
       "remove": true
     },
     {
-      "path": "system/priv-app/ThemeStub",
-      "description": "Empty theme stub — no real functionality",
-      "remove": false
-    },
-    {
       "path": "system/priv-app/ShutdownAfterScreenOff10MinutesService",
       "description": "Retail/demo mode service — shuts down device after 10min screen off",
       "remove": true
     },
     {
       "path": "system/priv-app/Messages",
-      "description": "Google Messages — replaced with QKSMS",
+      "description": "Google Messages — replaced with QUIK",
       "remove": true
     },
     {
       "path": "system/etc/permissions/privapp-permissions-com.google.android.apps.messaging.xml",
-      "description": "Permisos de Google Messages — huérfano tras remover Messages",
+      "description": "Google Messages permissions — orphaned after removing Messages",
       "remove": true
     }
   ],
   "system_ext_a": [
+    {
+      "path": "priv-app/GoogleServicesFramework",
+      "description": "TODO: Remove only when MicroG GSF replacement is confirmed working",
+      "remove": false
+    },
+    
+    
+    
+    {
+      "path": "priv-app/MtkGbaService",
+      "description": "NOTE: Needed for having VoWiFi and SMS working",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GmsSimProcessor",
+      "description": "NOTE: Carrier SIM data processor — safe to remove if not using carrier-specific services",
+      "remove": false
+    },
+    {
+      "path": "priv-app/WallpaperCropper",
+      "description": "NOTE: If removed and called, breaks stability (safe to remove, tested)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/SetupWizard",
+      "description": "NOTE: If removed, cause UI problems. It is not possible to delete here (tested)",
+      "remove": false
+    },
+    {
+      "path": "app/mediatek-res",
+      "description": "NOTE: Not remove, critical system resource that manage hardware integration",
+      "remove": false
+    },
+    {
+      "path": "app/TeeService",
+      "description": "NOTE: Trusted Execution Environment, not remove, needed for encryption, biometrics, etc.",
+      "remove": false
+    },
+    {
+      "path": "priv-app/CarrierConfig",
+      "description": "NOTE: Not remove, manage VoLTE, WiFi-Calling and other things",
+      "remove": false
+    },
+    {
+      "path": "priv-app/MtkCapCtrl",
+      "description": "NOTE: Part of MediaTek chipset framework, probably not safe to remove (not tested)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/MtkSettings",
+      "description": "NOTE: Another MediaTek chipset-specific app, not recommended remove it",
+      "remove": false
+    },
+    {
+      "path": "priv-app/MtkSystemUI",
+      "description": "NOTE: Not remove, MediaTek System User Interface",
+      "remove": false
+    },
+    {
+      "path": "priv-app/StorageManager",
+      "description": "NOTE: Default 'files' app, breaks stability like WallpaperCropper (safe to remove, not tested)",
+      "remove": false
+    },
+    {
+      "path": "priv-app/MtkSettingsProvider",
+      "description": "NOTE: Not remove, System-level component from MediaTek that can compromise stability if removed",
+      "remove": false
+    },
+    {
+      "path": "priv-app/MtkTelephonyAssist",
+      "description": "NOTE: Not remove, another MediaTek component that can compromise bla bla",
+      "remove": false
+    },
+
+    
+
+    {
+      "path": "etc/permissions/afw-com.inmobi.installer.xml",
+      "description": "TODO: com.inmobi.installer is bloatware, remove its permissions (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/com.android.emergency.xml",
+      "description": "TODO: In order to remove com.android.emergency (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.demo.xml",
+      "description": "TODO: com.motorola.demo no longer exists now (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.motocare.xml",
+      "description": "TODO: Same that with this (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.paks.xml",
+      "description": "TODO: And this (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/default-permissions/default-permission-com.motorola.ccc.notification.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.ccc.notification.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-com.motorola.ccc.devicemanagement.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/com.motorola.ccc.notification.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/com.motorola.ccc.devicemanagement.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.ccc.mainplm.xml",
+      "description": "NOTE: In order to remove com.motorola.ccc (tested)",
+      "remove": true
+    },
+    {
+      "path": "priv-app/LPPeService",
+      "description": "NOTE: Service that enhances location accuracy, probably don't needed (tested)",
+      "remove": true
+    },
+    {
+      "path": "priv-app/ModemStatsService",
+      "description": "tested",
+      "remove": true
+    },
+    {
+      "path": "priv-app/DeviceManagement",
+      "description": "tested",
+      "remove": true
+    },
     {
       "path": "priv-app/PAKS",
       "description": "",
@@ -599,63 +960,6 @@
       "description": "",
       "remove": true
     },
-
-
-
-    {
-      "path": "priv-app/GsmSimProcessor",
-      "description": "Carrier SIM data processor — safe to remove if not using carrier-specific services",
-      "remove": false
-    },
-    {
-      "path": "priv-app/GoogleServicesFramework",
-      "description": "WARNING: Remove only when MicroG GSF replacement is confirmed working",
-      "remove": false
-    },
-    {
-      "path": "priv-app/WallpaperCropper",
-      "description": "Cropper — unnecessary without MtkPicker",
-      "remove": false
-    },
-
-
-
-    {
-      "path": "priv-app/SetupWizard",
-      "description": "TODO: If removed, cause UI problems. Find the way of remove it",
-      "remove": false
-    },
-
-
-
-    {
-      "path": "priv-app/DeviceManagement",
-      "description": "TODO: Test",
-      "remove": false
-    },
-    {
-      "path": "priv-app/LPPeService",
-      "description": "TODO: Test",
-      "remove": false
-    },
-    {
-      "path": "priv-app/ModemStatsService",
-      "description": "TODO: Test",
-      "remove": false
-    },
-    {
-      "path": "app/MtkCapCtrl",
-      "description": "I guess is the media volume button",
-      "remove": false
-    },
-    {
-      "path": "app/MtkGbaService",
-      "description": "TODO: Test",
-      "remove": false
-    },
-
-
-
     {
       "path": "priv-app/DolbySound",
       "description": "Dolby Atmos — my benchmarks confirm it degrades audio quality",
