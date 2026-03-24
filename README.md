@@ -4,29 +4,27 @@ Custom firmware A14 based on stock without bloatware for penangf Moto G13SE & co
 ## Features
 
 ### ✅ Done
-- Removed (almost) all Motorola bloatware, including apps that could not be removed manually.
-- Removed pre-installation of all unnecessary Google apps.
+- Removed all (~140) bloatware apps & (~40) .xml of permissions.
 - Pre-installed lightweight open-source alternative apps:
-  - **OpenBoard** — replaces Gboard
-  - **QKSMS** — replaces Google Messages
+  - **OpenBoard** — replaces Gboard (Looking for an mantained Keyboard app)
+  - **QUIK** — replaces Google Messages
 - Optimized build.prop for MediaTek Helio G85 with 4GB RAM:
   - Fixed 90Hz refresh rate
   - Optimized Dalvik heap configuration
   - LMKD in PSI mode
   - Optimized network buffers
-
-### 🔄 In progress
 - **Native Signature Spoofing** — direct patch on `services.jar` for full MicroG support without root
 - **MicroG** — Google Play Services replacement (~150MB RAM savings estimated)
 
-### 📋 To-Do´s
+### 🔄 In progress
+- ReVanced Stack (YouTube, Spotify, Instagram) + MicroG
 - Install and test Magisk modules:
-  - Encore Tweaks — MediaTek Helio G85 governor optimization
-  - LMKD PSI RAM — Advanced memory management
   - PerfMTK — Optimize performance and power efficiency
-- YouTube ReVanced + MicroG once signature spoofing is working
+  - LMKD PSI RAM — Advanced memory management
+
+### 📋 To-Do´s
 - RRO overlays for additional UI customization
-- Replace Android SystemWebView with alternative
+- Replace Android SystemWebView with Cromite
 
 ### 🔒 Kept apps
 - **Moto Camera** — Required for Macro, 50MP binding & PRO MODE (unavailable in GCam)
@@ -38,8 +36,8 @@ Custom firmware A14 based on stock without bloatware for penangf Moto G13SE & co
 | Replacement | RAM saved |
 |---|---|
 | OpenBoard vs Gboard | ~50-290MB |
-| QKSMS vs Google Messages | ~30-80MB |
-| MicroG vs GMS (pending) | ~80-150MB |
+| QUIK vs Google Messages | ~30-80MB |
+| MicroG vs GMS | ~80-150MB |
 | Full debloat | ~100-200MB |
 | **Total estimated** | **~260-720MB** |
 

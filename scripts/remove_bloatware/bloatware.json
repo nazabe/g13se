@@ -240,165 +240,132 @@
       "description": "NOTE: Telemetry, https://github.com/nethical6/digipaws",
       "remove": true
     },
-
-
-
     {
       "path": "etc/permissions/com.motorola.gamemode.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/com.motorola.help.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/com.motorola.software.odm1.game_mode.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/com.motorola.timeweatherwidget.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/com.payjoy.access.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/feature-com.taboola.ody.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/permission_ignite_com.inmobi.installer.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/privapp-permissions-com.motorola.gamemode.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/privapp-permissions-com.motorola.help.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/permissions/privapp-permissions-com.taboola.ody.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
-    },
-    {
-      "path": "etc/permissions/privapp-permissions-google-comms-suite.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
-      "remove": false
-    },
-    {
-      "path": "etc/permissions/privapp-permissions-google-product.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
-      "remove": false
     },
     {
       "path": "etc/permissions/privapp-permissions-orange.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
-      "path": "etc/permissions/split-permissions-google.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
-      "remove": false
-    },
-
-
-
-    {
       "path": "etc/default-permissions/default-permission-com.motorola.timeweatherwidget.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/default-permissions/default-permissions-com.motorola.gamemode.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
-    },
-    {
-      "path": "etc/default-permissions/default-permissions-google.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
-      "remove": false
     },
     {
       "path": "etc/default-permissions/pregranted-notification-permission-glance.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
-    },
-    {
-      "path": "etc/default-permissions/pregranted-notification-permission-motorola.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
-      "remove": false
     },
     {
       "path": "etc/default-permissions/pregranted-notification-permission-orange.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
-
-
     {
       "path": "etc/sysconfig/bugreport-whitelist-com.motorola.help.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/eea_v2_search_chrome.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.gamemode.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.help.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/hiddenapi-whitelist-com.motorola.timeweatherwidget.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/personal_safety.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/shortcut-com.motorola.gamemode.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/sysconfig-orange.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/wellbeing.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
     {
       "path": "etc/sysconfig/whitelist_com.inmobi.installer.xml",
-      "description": "NOTE: Removing unnused permissions (not tested)",
+      "description": "NOTE: Removing unnused permissions (tested)",
       "remove": true
     },
-
+    
     
     
     {
@@ -411,27 +378,24 @@
       "description": "TODO: https://github.com/syphyr/android_external_cromite-webview",
       "remove": false
     },
-
-
-
+    
+    
+    
     {
       "path": "priv-app/Phonesky",
-      "description": "TODO: Google Play Store — remove when switching to MicroG",
+      "description": "NOTE: Google Play Store — needed for MicroG",
       "remove": false
     },
     {
       "path": "app/NonFrameworkLbs",
-      "description": "TODO: Remove when switching to MicroG",
-      "remove": false
+      "description": "NOTE: Removed, use MicroG",
+      "remove": true
     },
     {
       "path": "priv-app/GmsCore",
-      "description": "TODO: Remove when switching to MicroG",
-      "remove": false
+      "description": "NOTE: Removed, use MicroG",
+      "remove": true
     },
-
-
-
     {
       "path": "app/CalculatorGoogle",
       "description": "NOTE: No telemetry, personal best (safe to remove)",
@@ -440,6 +404,31 @@
     {
       "path": "app/DeskClockGoogle",
       "description": "NOTE: Native, fully system-integrated (safe to remove)",
+      "remove": false
+    },
+    {
+      "path": "etc/permissions/split-permissions-google.xml",
+      "description": "NOTE: Not remove, it leads to UI errors, ending with reboot  (tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/default-permissions/default-permissions-google.xml",
+      "description": "NOTE: Not remove, it leads to UI errors, ending with reboot (tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/default-permissions/pregranted-notification-permission-motorola.xml",
+      "description": "NOTE: Not remove, it leads to UI errors, ending with reboot (tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-google-comms-suite.xml",
+      "description": "NOTE: Not remove, it leads to UI errors, ending with reboot  (tested)",
+      "remove": false
+    },
+    {
+      "path": "etc/permissions/privapp-permissions-google-product.xml",
+      "description": "NOTE: Not remove, it leads to UI errors, ending with reboot  (tested)",
       "remove": false
     },
     {
@@ -500,6 +489,75 @@
       "remove": false
     },
 
+
+
+    {
+      "path": "system/app/CertInstaller",
+      "description": "NOTE: UI for installing SSL/TLS certificates manually, safe to remove (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/app/MtkPrivacyPolicy",
+      "description": "NOTE: Mediatek's privacy policy popup shown at first boot, safe to remove (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/app/PacProcessor",
+      "description": "NOTE: Handles PAC (Proxy Auto-Config) scripts for enterprise proxy networks, safe to remove (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/app/SecureElement",
+      "description": "NOTE: NFC secure element support, my device does not have NFC (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/app/SecureElement",
+      "description": "NOTE: NFC secure element support, my device does not have NFC (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/BackupRestoreConfirmation",
+      "description": "NOTE: Shows the confirmation dialog when an ADB backup/restore is triggered (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/BuiltInPrintService",
+      "description": "NOTE: Enables printing to network/WiFi printers natively (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/CallLogBackup",
+      "description": "NOTE: Backs up your call history to Google (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/BackupRestoreConfirmation",
+      "description": "NOTE: Shows the confirmation dialog when an ADB backup/restore is triggered (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/DynamicSystemInstallationService",
+      "description": "NOTE: DSU Loader on Developer Settings, awesome feature, but I don't need it (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/LocalTransport",
+      "description": "NOTE: A local backup transport used by Android's backup framework (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/UserDictionaryProvider",
+      "description": "NOTE: Stores your custom words and text shortcuts for the keyboard (not tested)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/BluetoothMidiService",
+      "description": "NOTE: Adds MIDI over Bluetooth support (for musical instruments/controllers) (not tested)",
+      "remove": true
+    },
+    
+    
 
 
     {
@@ -624,7 +682,7 @@
     },
     {
       "path": "system/priv-app/SysDLL",
-      "description": "Useless app that sends requests to carrier servers to know if the device has to be locked (if the IMEI is banned)",
+      "description": "Useless app that to check if the IMEI is banned",
       "remove": true
     },
     {
@@ -756,12 +814,9 @@
   "system_ext_a": [
     {
       "path": "priv-app/GoogleServicesFramework",
-      "description": "TODO: Remove only when MicroG GSF replacement is confirmed working",
-      "remove": false
+      "description": "NOTE: Removed, MicroG GSF replacement is confirmed working",
+      "remove": true
     },
-    
-    
-    
     {
       "path": "priv-app/MtkGbaService",
       "description": "NOTE: Needed for having VoWiFi and SMS working",

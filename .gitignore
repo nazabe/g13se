@@ -21,11 +21,7 @@ generated_dex/
 haruka_34.dex
 haruka_core.dex
 patch_services.sh
-scripts/install_apks/apps/Magisk-v30.7.apk
-scripts/install_apks/apps/OpenBoard-v1.4.5.apk
 services.jar
 /framework_smali/*
-scripts/install_apks/apps/OpenBoard.apk
-scripts/install_apks/other/LMC8.4_R18F1.apk
-scripts/install_apks/other/YouTube-ReVanced.apk
+scripts/install_apks/apps/*
 twrp.img
